@@ -1,0 +1,3162 @@
+<div class="course">
+    <!--表头-->
+    <header>
+        <!--周数头-->
+        <div class="week-control">
+            <div class="header"></div>
+            <div class="week"><b>Week<span id="weekNumber">1</span></b></div>
+
+            <script>
+                $(function (e) {
+                    $(".week-control .week").click(function (e) {
+                        $(".translate-overlay").fadeIn();
+                    })
+                })
+            </script>
+
+            <div class="control">
+                <svg t="1645421216654" class="icon" viewBox="0 0 1060 1024" version="1.1"
+                     xmlns="http://www.w3.org/2000/svg" p-id="2057" width="0.7rem" height="0.7rem">
+                    <path d="M741.702063 700.048698m-317.087927 0a317.087927 317.087927 0 1 0 634.175855 0 317.087927 317.087927 0 1 0-634.175855 0Z"
+                          fill="#5CF1E7" p-id="2058"></path>
+                    <path d="M512.922895 422.768346a91.511667 91.511667 0 1 1-91.511667 91.511667 91.511667 91.511667 0 0 1 91.511667-91.511667m0-91.511667a183.023335 183.023335 0 1 0 183.023335 183.023334 183.023335 183.023335 0 0 0-183.023335-183.023334z"
+                          fill="#A8B9E9" p-id="2059"></path>
+                    <path d="M511.092662 1024h-27.4535a120.337842 120.337842 0 0 1-109.356443-87.851201 34.316875 34.316875 0 0 0-21.047683-24.250591 34.774434 34.774434 0 0 0-32.9442 4.575583 116.219817 116.219817 0 0 1-137.267501-8.693608 463.506595 463.506595 0 0 1-48.958742-45.755834 118.965167 118.965167 0 0 1-17.387217-142.300643 34.774434 34.774434 0 0 0 0-32.029083 33.859317 33.859317 0 0 0-25.165709-20.590125 119.880284 119.880284 0 0 1-91.511667-104.780859v-45.755834-19.675009a119.880284 119.880284 0 0 1 88.308759-114.389584 33.401759 33.401759 0 0 0 23.335475-20.132567 35.68955 35.68955 0 0 0-3.202908-33.859316 116.219817 116.219817 0 0 1 6.405816-137.267501 511.092662 511.092662 0 0 1 61.770376-64.058167 118.507609 118.507609 0 0 1 137.267501-10.523842 36.147109 36.147109 0 0 0 32.029083 2.74535 34.316875 34.316875 0 0 0 22.420359-26.538384 117.592492 117.592492 0 0 1 104.323301-91.511667A538.546162 538.546162 0 0 1 549.070004 1.357118a118.507609 118.507609 0 0 1 104.3233 91.511667 34.774434 34.774434 0 0 0 20.132567 24.70815 35.231992 35.231992 0 0 0 32.9442-2.74535 117.592492 117.592492 0 0 1 137.267501 10.981401 514.29557 514.29557 0 0 1 54.449442 54.907 118.965167 118.965167 0 0 1 8.236051 137.267501 35.231992 35.231992 0 0 0 21.9628 53.534325 120.795401 120.795401 0 0 1 91.511667 110.271559v70.463984a121.252959 121.252959 0 0 1-94.714576 103.865742 45.755834 45.755834 0 0 1-55.822117-30.19885 45.755834 45.755834 0 0 1 32.9442-55.822117c12.354075-2.74535 25.165709-11.438958 26.080826-22.877917a290.091985 290.091985 0 0 0 0-34.774433v-21.9628a28.826175 28.826175 0 0 0-20.132567-26.995942 126.743659 126.743659 0 0 1-78.700034-192.63206 26.080825 26.080825 0 0 0 0-30.19885 419.123436 419.123436 0 0 0-45.755834-45.755834 25.165709 25.165709 0 0 0-29.741292 0A126.743659 126.743659 0 0 1 640.581671 202.682786a128.116334 128.116334 0 0 1-73.666892-88.308759 25.623267 25.623267 0 0 0-24.70815-21.505242 353.235036 353.235036 0 0 0-62.227934 0 24.250592 24.250592 0 0 0-21.9628 19.21745 126.743659 126.743659 0 0 1-76.412242 91.511668 128.573893 128.573893 0 0 1-113.932026-9.151167 26.080825 26.080825 0 0 0-31.113967 0 421.868786 421.868786 0 0 0-50.331417 53.991884A24.250592 24.250592 0 0 0 183.023335 275.89212a127.201218 127.201218 0 0 1 11.896516 119.880284 125.828543 125.828543 0 0 1-83.733175 73.666892 27.911059 27.911059 0 0 0-20.590125 26.080825v15.556984A354.607711 354.607711 0 0 0 91.511667 550.427122a27.4535 27.4535 0 0 0 20.590125 24.250592 126.286101 126.286101 0 0 1 91.511668 73.666892 127.658776 127.658776 0 0 1-6.863375 114.389584 28.826175 28.826175 0 0 0 5.033141 33.859317 453.440311 453.440311 0 0 0 40.265134 37.977342 26.080825 26.080825 0 0 0 29.283734 0 126.743659 126.743659 0 0 1 190.344267 75.497125 27.911059 27.911059 0 0 0 26.080826 19.675009 345.914102 345.914102 0 0 0 57.65235 0 26.080825 26.080825 0 0 0 22.420359-21.505242 129.489009 129.489009 0 0 1 190.344268-87.393642 31.113967 31.113967 0 0 0 34.774433 0c10.523842-9.608725 20.590125-20.132567 30.656409-30.656409a45.755834 45.755834 0 1 1 67.718633 60.855259 411.802503 411.802503 0 0 1-37.062225 37.519783 121.252959 121.252959 0 0 1-140.927967 12.354075 37.977342 37.977342 0 0 0-55.822118 25.623267 117.592492 117.592492 0 0 1-103.408184 94.257018c-13.269192 2.287792-27.911059 3.202908-43.010483 3.202908z"
+                          fill="#1F56F5" p-id="2060"></path>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <div class="overlay couese-overlay">
+        <div class="message-show">
+            <h2>课程详情</h2>
+
+            <div class="course-message">
+                <h3>创新思维</h3>
+
+                <div class="week-day">
+                    <span class="first week">1-8周</span>
+                    <span class="second day">(17:00-18:00)</span>
+                </div>
+
+                <div class="class-teacher">
+                    <span class="first class">实验楼北楼</span>
+                    <span class="second teacher">当天的</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="login-overlay">
+        <form action="/lightapp/Login/se.do" method="post" id="import">
+
+            <div class="logo"></div>
+
+            <div class="segment">
+                <h1>同步课表</h1>
+
+                <h3>注：同步学校的课表</h3>
+                <h3>是否同步不影响应用本身的正常使用</h3>
+            </div>
+
+            <div class="message">
+            </div>
+
+            <label>
+                <input id="usercode" name="userCode" type="text" placeholder="学号"/>
+            </label>
+            <label>
+                <input id="password" name="passWord" type="password" placeholder="密码"/>
+            </label>
+            <button class="red" type="button">import</button>
+
+            <div class="segment">
+                <button class="unit" type="button">
+                    <svg t="1646368478140" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                         xmlns="http://www.w3.org/2000/svg" p-id="2557" width="16" height="16">
+                        <path d="M496.042667 742.272l-60.330667 60.330667-230.272-230.272-0.042667 0.085333L145.024 512l165.973333-165.930667 82.944-82.944 41.472-41.514666L495.786667 282.026667 265.813333 512l105.770667 105.813333 82.986667 82.986667 41.472 41.472z"
+                              p-id="2558"></path>
+                        <path d="M213.333333 469.333333h640v85.333334H213.333333z" p-id="2559"></path>
+                    </svg>
+                </button>
+            </div>
+            <script>
+                $(".week-control svg").click(function (e) {
+                    $(".login-overlay").fadeIn();
+                })
+                $(".login-overlay .unit").click(function (e) {
+                    $(".login-overlay").fadeToggle();
+                })
+                $(".red").click(function () {
+                    var thisPwd = document.getElementById("password").value;
+                    if (thisPwd.length != 256) {
+                        setMaxDigits(131);
+                        var key = new RSAKeyPair("010001", '', "0081d44e2c44f4546ffb2809f25d78193e1df3166918641759b11f30ef6a5ed6bb1ddf6939beb185a57ad22841b4b2a8e86dba9c3c7008221b98fc040033ed1594c88aeb574861a470710795d1275cf64c5ac5def7b8ee93ca8e8de59d476c8a94d4e6668da80d794f4212cefffc294c48f48602d9361896965363bceab53da3bb");
+                        var result = encryptedString(key, encodeURIComponent(thisPwd));
+                        $("#password").val(result);
+
+                        if ($("#password").val() != null && $("#password").val() != "" && $("#usercode").val() != null && $("#usercode").val() != "") {
+                            $("#import").submit();
+                        } else {
+                            $(".login-overlay .message").html("输入的学号或者密码为空")
+                        }
+
+                    }
+                });
+
+
+            </script>
+
+
+            <!--                <div class="input-group">-->
+            <!--                    <label>-->
+            <!--                        <input type="text" placeholder="Email Address"/>-->
+            <!--                    </label>-->
+            <!--                    <button class="unit" type="button"><i class="icon ion-md-search"></i></button>-->
+            <!--                </div>-->
+            <!--    -->
+        </form>
+    </div>
+    <div class="overlay translate-overlay">
+        <div class="translate-list">
+            <h2>点击显示指定星期课表</h2>
+
+            <div class="course-message">
+
+                <div class="line">
+                    <div class="index-week" data-index="1">1</div>
+                    <div class="index-week" data-index="2">2</div>
+                    <div class="index-week" data-index="3">3</div>
+                    <div class="index-week" data-index="4">4</div>
+                    <div class="index-week" data-index="5">5</div>
+                    <div class="index-week" data-index="6">6</div>
+                </div>
+
+                <div class="line">
+                    <div class="index-week" data-index="7">7</div>
+                    <div class="index-week" data-index="8">8</div>
+                    <div class="index-week" data-index="9">9</div>
+                    <div class="index-week" data-index="10">10</div>
+                    <div class="index-week" data-index="11">11</div>
+                    <div class="index-week" data-index="12">12</div>
+                </div>
+                <div class="line">
+                    <div class="index-week" data-index="13">13</div>
+                    <div class="index-week" data-index="14">14</div>
+                    <div class="index-week" data-index="15">15</div>
+                    <div class="index-week" data-index="16">16</div>
+                    <div class="index-week" data-index="17">17</div>
+                    <div class="index-week" data-index="18">18</div>
+                </div>
+                <div class="line">
+                    <div class="index-week" data-index="19">19</div>
+                    <div class="index-week" data-index="20">20</div>
+                    <div class="blank"></div>
+                    <div class="blank"></div>
+                    <div class="blank"></div>
+                    <div class="blank"></div>
+                </div>
+            </div>
+
+            <!--                <script>-->
+            <!--                    $(".translate-overlay .index-week").click(function (e) {-->
+            <!--                        let swiper = window.courseSwiper-->
+            <!--                        console.log(-(swiper.width*($(this).data("index")-1)))-->
+            <!--                        swiper.setTranslate(-(swiper.width*$(this).data("index")-1))-->
+
+            <!--                        // $("#weekNumber").html(swiper.activeIndex)-->
+            <!--                    })-->
+            <!--                </script>-->
+        </div>
+    </div>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <!--星期头-->
+                <div class="weekday">
+                    <div class="weekday-contain">
+                        <div class="day-time">
+                            <div class="day">周一</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周二</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周三</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周四</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周五</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周六</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周日</div>
+                        </div>
+                    </div>
+                </div>
+                <!--测栏-->
+                <div class="aside-course">
+                    <div class="course-contain">
+                        <div class="day-col day-col0">
+                            <div class="course" style="top: 0">
+                                1
+                                <p>08:30</p>
+                                <p>09:10</p>
+                            </div>
+
+                            <div class="course" style="top: 80px">
+                                2
+                                <p>09:10</p>
+                                <p>09:50</p>
+                            </div>
+
+                            <div class="course" style="top: 180px">
+                                3
+                                <p>10:00</p>
+                                <p>10:40</p>
+                            </div>
+
+                            <div class="course" style="top: 260px">
+                                4
+                                <p>10:40</p>
+                                <p>11:20</p>
+                            </div>
+
+                            <div class="course" style="top: 360px">
+                                5
+                                <p>11:30</p>
+                                <p>12:10</p>
+                            </div>
+
+                            <div class="course" style="top: 460px;height: 180px;background:rgba(32,160,255,.5)">
+                                午间
+                                <p>12:20</p>
+                                <p>13:50</p>
+                            </div>
+
+                            <div class="course" style="top :660px">
+                                6
+                                <p>14:00</p>
+                                <p>14:40</p>
+                            </div>
+
+                            <div class="course" style="top :740px">
+                                7
+                                <p>14:40</p>
+                                <p>15:20</p>
+                            </div>
+
+                            <div class="course" style="top :840px">
+                                8
+                                <p>15:30</p>
+                                <p>16:10</p>
+                            </div>
+
+                            <div class="course" style="top :920px">
+                                9
+                                <p>16:60</p>
+                                <p>16:50</p>
+                            </div>
+
+                            <div class="course" style="top: 1020px;height: 160px;background: rgba(32,160,255,.5)">
+                                晚间
+                                <p>17：00</p>
+                                <p>18：20</p>
+                            </div>
+
+                            <div class="course" style="top :1200px">
+                                10
+                                <p>18:30</p>
+                                <p>19:10</p>
+                            </div>
+
+                            <div class="course" style="top :1280px">
+                                11
+                                <p>19:10</p>
+                                <p>19:50</p>
+                            </div>
+
+                            <div class="course" style="top :1380px">
+                                12
+                                <p>20:00</p>
+                                <p>20:40</p>
+                            </div>
+
+                            <div class="course" style="top :1460px">
+                                12
+                                <p>20:40</p>
+                                <p>21:20</p>
+                            </div>
+
+
+                        </div>
+                        <div class="day-col day-col1">
+                        </div>
+                        <div class="day-col day-col2">
+                        </div>
+                        <div class="day-col day-col3">
+                        </div>
+                        <div class="day-col day-col4">
+                        </div>
+                        <div class="day-col day-col5">
+                        </div>
+                        <div class="day-col day-col6">
+                        </div>
+                        <div class="day-col day-col7">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <!--星期头-->
+                <div class="weekday">
+                    <div class="weekday-contain">
+                        <div class="day-time">
+                            <div class="day">周一</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周二</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周三</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周四</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周五</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周六</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周日</div>
+                        </div>
+                    </div>
+                </div>
+                <!--测栏-->
+                <div class="aside-course">
+                    <div class="course-contain">
+                        <div class="day-col day-col0">
+                            <div class="course" style="top: 0">
+                                1
+                                <p>08:30</p>
+                                <p>09:10</p>
+                            </div>
+
+                            <div class="course" style="top: 80px">
+                                2
+                                <p>09:10</p>
+                                <p>09:50</p>
+                            </div>
+
+                            <div class="course" style="top: 180px">
+                                3
+                                <p>10:00</p>
+                                <p>10:40</p>
+                            </div>
+
+                            <div class="course" style="top: 260px">
+                                4
+                                <p>10:40</p>
+                                <p>11:20</p>
+                            </div>
+
+                            <div class="course" style="top: 360px">
+                                5
+                                <p>11:30</p>
+                                <p>12:10</p>
+                            </div>
+
+                            <div class="course" style="top: 460px;height: 180px;background:rgba(32,160,255,.5)">
+                                午间
+                                <p>12:20</p>
+                                <p>13:50</p>
+                            </div>
+
+                            <div class="course" style="top :660px">
+                                6
+                                <p>14:00</p>
+                                <p>14:40</p>
+                            </div>
+
+                            <div class="course" style="top :740px">
+                                7
+                                <p>14:40</p>
+                                <p>15:20</p>
+                            </div>
+
+                            <div class="course" style="top :840px">
+                                8
+                                <p>15:30</p>
+                                <p>16:10</p>
+                            </div>
+
+                            <div class="course" style="top :920px">
+                                9
+                                <p>16:60</p>
+                                <p>16:50</p>
+                            </div>
+
+                            <div class="course" style="top: 1020px;height: 160px;background: rgba(32,160,255,.5)">
+                                晚间
+                                <p>17：00</p>
+                                <p>18：20</p>
+                            </div>
+
+                            <div class="course" style="top :1200px">
+                                10
+                                <p>18:30</p>
+                                <p>19:10</p>
+                            </div>
+
+                            <div class="course" style="top :1280px">
+                                11
+                                <p>19:10</p>
+                                <p>19:50</p>
+                            </div>
+
+                            <div class="course" style="top :1380px">
+                                12
+                                <p>20:00</p>
+                                <p>20:40</p>
+                            </div>
+
+                            <div class="course" style="top :1460px">
+                                12
+                                <p>20:40</p>
+                                <p>21:20</p>
+                            </div>
+
+
+                        </div>
+                        <div class="day-col day-col1">
+                        </div>
+                        <div class="day-col day-col2">
+                        </div>
+                        <div class="day-col day-col3">
+                        </div>
+                        <div class="day-col day-col4">
+                        </div>
+                        <div class="day-col day-col5">
+                        </div>
+                        <div class="day-col day-col6">
+                        </div>
+                        <div class="day-col day-col7">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <!--星期头-->
+                <div class="weekday">
+                    <div class="weekday-contain">
+                        <div class="day-time">
+                            <div class="day">周一</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周二</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周三</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周四</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周五</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周六</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周日</div>
+                        </div>
+                    </div>
+                </div>
+                <!--测栏-->
+                <div class="aside-course">
+                    <div class="course-contain">
+                        <div class="day-col day-col0">
+                            <div class="course" style="top: 0">
+                                1
+                                <p>08:30</p>
+                                <p>09:10</p>
+                            </div>
+
+                            <div class="course" style="top: 80px">
+                                2
+                                <p>09:10</p>
+                                <p>09:50</p>
+                            </div>
+
+                            <div class="course" style="top: 180px">
+                                3
+                                <p>10:00</p>
+                                <p>10:40</p>
+                            </div>
+
+                            <div class="course" style="top: 260px">
+                                4
+                                <p>10:40</p>
+                                <p>11:20</p>
+                            </div>
+
+                            <div class="course" style="top: 360px">
+                                5
+                                <p>11:30</p>
+                                <p>12:10</p>
+                            </div>
+
+                            <div class="course" style="top: 460px;height: 180px;background:rgba(32,160,255,.5)">
+                                午间
+                                <p>12:20</p>
+                                <p>13:50</p>
+                            </div>
+
+                            <div class="course" style="top :660px">
+                                6
+                                <p>14:00</p>
+                                <p>14:40</p>
+                            </div>
+
+                            <div class="course" style="top :740px">
+                                7
+                                <p>14:40</p>
+                                <p>15:20</p>
+                            </div>
+
+                            <div class="course" style="top :840px">
+                                8
+                                <p>15:30</p>
+                                <p>16:10</p>
+                            </div>
+
+                            <div class="course" style="top :920px">
+                                9
+                                <p>16:60</p>
+                                <p>16:50</p>
+                            </div>
+
+                            <div class="course" style="top: 1020px;height: 160px;background: rgba(32,160,255,.5)">
+                                晚间
+                                <p>17：00</p>
+                                <p>18：20</p>
+                            </div>
+
+                            <div class="course" style="top :1200px">
+                                10
+                                <p>18:30</p>
+                                <p>19:10</p>
+                            </div>
+
+                            <div class="course" style="top :1280px">
+                                11
+                                <p>19:10</p>
+                                <p>19:50</p>
+                            </div>
+
+                            <div class="course" style="top :1380px">
+                                12
+                                <p>20:00</p>
+                                <p>20:40</p>
+                            </div>
+
+                            <div class="course" style="top :1460px">
+                                12
+                                <p>20:40</p>
+                                <p>21:20</p>
+                            </div>
+
+
+                        </div>
+                        <div class="day-col day-col1">
+                        </div>
+                        <div class="day-col day-col2">
+                        </div>
+                        <div class="day-col day-col3">
+                        </div>
+                        <div class="day-col day-col4">
+                        </div>
+                        <div class="day-col day-col5">
+                        </div>
+                        <div class="day-col day-col6">
+                        </div>
+                        <div class="day-col day-col7">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <!--星期头-->
+                <div class="weekday">
+                    <div class="weekday-contain">
+                        <div class="day-time">
+                            <div class="day">周一</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周二</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周三</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周四</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周五</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周六</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周日</div>
+                        </div>
+                    </div>
+                </div>
+                <!--测栏-->
+                <div class="aside-course">
+                    <div class="course-contain">
+                        <div class="day-col day-col0">
+                            <div class="course" style="top: 0">
+                                1
+                                <p>08:30</p>
+                                <p>09:10</p>
+                            </div>
+
+                            <div class="course" style="top: 80px">
+                                2
+                                <p>09:10</p>
+                                <p>09:50</p>
+                            </div>
+
+                            <div class="course" style="top: 180px">
+                                3
+                                <p>10:00</p>
+                                <p>10:40</p>
+                            </div>
+
+                            <div class="course" style="top: 260px">
+                                4
+                                <p>10:40</p>
+                                <p>11:20</p>
+                            </div>
+
+                            <div class="course" style="top: 360px">
+                                5
+                                <p>11:30</p>
+                                <p>12:10</p>
+                            </div>
+
+                            <div class="course" style="top: 460px;height: 180px;background:rgba(32,160,255,.5)">
+                                午间
+                                <p>12:20</p>
+                                <p>13:50</p>
+                            </div>
+
+                            <div class="course" style="top :660px">
+                                6
+                                <p>14:00</p>
+                                <p>14:40</p>
+                            </div>
+
+                            <div class="course" style="top :740px">
+                                7
+                                <p>14:40</p>
+                                <p>15:20</p>
+                            </div>
+
+                            <div class="course" style="top :840px">
+                                8
+                                <p>15:30</p>
+                                <p>16:10</p>
+                            </div>
+
+                            <div class="course" style="top :920px">
+                                9
+                                <p>16:60</p>
+                                <p>16:50</p>
+                            </div>
+
+                            <div class="course" style="top: 1020px;height: 160px;background: rgba(32,160,255,.5)">
+                                晚间
+                                <p>17：00</p>
+                                <p>18：20</p>
+                            </div>
+
+                            <div class="course" style="top :1200px">
+                                10
+                                <p>18:30</p>
+                                <p>19:10</p>
+                            </div>
+
+                            <div class="course" style="top :1280px">
+                                11
+                                <p>19:10</p>
+                                <p>19:50</p>
+                            </div>
+
+                            <div class="course" style="top :1380px">
+                                12
+                                <p>20:00</p>
+                                <p>20:40</p>
+                            </div>
+
+                            <div class="course" style="top :1460px">
+                                12
+                                <p>20:40</p>
+                                <p>21:20</p>
+                            </div>
+
+
+                        </div>
+                        <div class="day-col day-col1">
+                        </div>
+                        <div class="day-col day-col2">
+                        </div>
+                        <div class="day-col day-col3">
+                        </div>
+                        <div class="day-col day-col4">
+                        </div>
+                        <div class="day-col day-col5">
+                        </div>
+                        <div class="day-col day-col6">
+                        </div>
+                        <div class="day-col day-col7">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <!--星期头-->
+                <div class="weekday">
+                    <div class="weekday-contain">
+                        <div class="day-time">
+                            <div class="day">周一</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周二</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周三</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周四</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周五</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周六</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周日</div>
+                        </div>
+                    </div>
+                </div>
+                <!--测栏-->
+                <div class="aside-course">
+                    <div class="course-contain">
+                        <div class="day-col day-col0">
+                            <div class="course" style="top: 0">
+                                1
+                                <p>08:30</p>
+                                <p>09:10</p>
+                            </div>
+
+                            <div class="course" style="top: 80px">
+                                2
+                                <p>09:10</p>
+                                <p>09:50</p>
+                            </div>
+
+                            <div class="course" style="top: 180px">
+                                3
+                                <p>10:00</p>
+                                <p>10:40</p>
+                            </div>
+
+                            <div class="course" style="top: 260px">
+                                4
+                                <p>10:40</p>
+                                <p>11:20</p>
+                            </div>
+
+                            <div class="course" style="top: 360px">
+                                5
+                                <p>11:30</p>
+                                <p>12:10</p>
+                            </div>
+
+                            <div class="course" style="top: 460px;height: 180px;background:rgba(32,160,255,.5)">
+                                午间
+                                <p>12:20</p>
+                                <p>13:50</p>
+                            </div>
+
+                            <div class="course" style="top :660px">
+                                6
+                                <p>14:00</p>
+                                <p>14:40</p>
+                            </div>
+
+                            <div class="course" style="top :740px">
+                                7
+                                <p>14:40</p>
+                                <p>15:20</p>
+                            </div>
+
+                            <div class="course" style="top :840px">
+                                8
+                                <p>15:30</p>
+                                <p>16:10</p>
+                            </div>
+
+                            <div class="course" style="top :920px">
+                                9
+                                <p>16:60</p>
+                                <p>16:50</p>
+                            </div>
+
+                            <div class="course" style="top: 1020px;height: 160px;background: rgba(32,160,255,.5)">
+                                晚间
+                                <p>17：00</p>
+                                <p>18：20</p>
+                            </div>
+
+                            <div class="course" style="top :1200px">
+                                10
+                                <p>18:30</p>
+                                <p>19:10</p>
+                            </div>
+
+                            <div class="course" style="top :1280px">
+                                11
+                                <p>19:10</p>
+                                <p>19:50</p>
+                            </div>
+
+                            <div class="course" style="top :1380px">
+                                12
+                                <p>20:00</p>
+                                <p>20:40</p>
+                            </div>
+
+                            <div class="course" style="top :1460px">
+                                12
+                                <p>20:40</p>
+                                <p>21:20</p>
+                            </div>
+
+
+                        </div>
+                        <div class="day-col day-col1">
+                        </div>
+                        <div class="day-col day-col2">
+                        </div>
+                        <div class="day-col day-col3">
+                        </div>
+                        <div class="day-col day-col4">
+                        </div>
+                        <div class="day-col day-col5">
+                        </div>
+                        <div class="day-col day-col6">
+                        </div>
+                        <div class="day-col day-col7">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <!--星期头-->
+                <div class="weekday">
+                    <div class="weekday-contain">
+                        <div class="day-time">
+                            <div class="day">周一</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周二</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周三</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周四</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周五</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周六</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周日</div>
+                        </div>
+                    </div>
+                </div>
+                <!--测栏-->
+                <div class="aside-course">
+                    <div class="course-contain">
+                        <div class="day-col day-col0">
+                            <div class="course" style="top: 0">
+                                1
+                                <p>08:30</p>
+                                <p>09:10</p>
+                            </div>
+
+                            <div class="course" style="top: 80px">
+                                2
+                                <p>09:10</p>
+                                <p>09:50</p>
+                            </div>
+
+                            <div class="course" style="top: 180px">
+                                3
+                                <p>10:00</p>
+                                <p>10:40</p>
+                            </div>
+
+                            <div class="course" style="top: 260px">
+                                4
+                                <p>10:40</p>
+                                <p>11:20</p>
+                            </div>
+
+                            <div class="course" style="top: 360px">
+                                5
+                                <p>11:30</p>
+                                <p>12:10</p>
+                            </div>
+
+                            <div class="course" style="top: 460px;height: 180px;background:rgba(32,160,255,.5)">
+                                午间
+                                <p>12:20</p>
+                                <p>13:50</p>
+                            </div>
+
+                            <div class="course" style="top :660px">
+                                6
+                                <p>14:00</p>
+                                <p>14:40</p>
+                            </div>
+
+                            <div class="course" style="top :740px">
+                                7
+                                <p>14:40</p>
+                                <p>15:20</p>
+                            </div>
+
+                            <div class="course" style="top :840px">
+                                8
+                                <p>15:30</p>
+                                <p>16:10</p>
+                            </div>
+
+                            <div class="course" style="top :920px">
+                                9
+                                <p>16:60</p>
+                                <p>16:50</p>
+                            </div>
+
+                            <div class="course" style="top: 1020px;height: 160px;background: rgba(32,160,255,.5)">
+                                晚间
+                                <p>17：00</p>
+                                <p>18：20</p>
+                            </div>
+
+                            <div class="course" style="top :1200px">
+                                10
+                                <p>18:30</p>
+                                <p>19:10</p>
+                            </div>
+
+                            <div class="course" style="top :1280px">
+                                11
+                                <p>19:10</p>
+                                <p>19:50</p>
+                            </div>
+
+                            <div class="course" style="top :1380px">
+                                12
+                                <p>20:00</p>
+                                <p>20:40</p>
+                            </div>
+
+                            <div class="course" style="top :1460px">
+                                12
+                                <p>20:40</p>
+                                <p>21:20</p>
+                            </div>
+
+
+                        </div>
+                        <div class="day-col day-col1">
+                        </div>
+                        <div class="day-col day-col2">
+                        </div>
+                        <div class="day-col day-col3">
+                        </div>
+                        <div class="day-col day-col4">
+                        </div>
+                        <div class="day-col day-col5">
+                        </div>
+                        <div class="day-col day-col6">
+                        </div>
+                        <div class="day-col day-col7">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <!--星期头-->
+                <div class="weekday">
+                    <div class="weekday-contain">
+                        <div class="day-time">
+                            <div class="day">周一</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周二</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周三</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周四</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周五</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周六</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周日</div>
+                        </div>
+                    </div>
+                </div>
+                <!--测栏-->
+                <div class="aside-course">
+                    <div class="course-contain">
+                        <div class="day-col day-col0">
+                            <div class="course" style="top: 0">
+                                1
+                                <p>08:30</p>
+                                <p>09:10</p>
+                            </div>
+
+                            <div class="course" style="top: 80px">
+                                2
+                                <p>09:10</p>
+                                <p>09:50</p>
+                            </div>
+
+                            <div class="course" style="top: 180px">
+                                3
+                                <p>10:00</p>
+                                <p>10:40</p>
+                            </div>
+
+                            <div class="course" style="top: 260px">
+                                4
+                                <p>10:40</p>
+                                <p>11:20</p>
+                            </div>
+
+                            <div class="course" style="top: 360px">
+                                5
+                                <p>11:30</p>
+                                <p>12:10</p>
+                            </div>
+
+                            <div class="course" style="top: 460px;height: 180px;background:rgba(32,160,255,.5)">
+                                午间
+                                <p>12:20</p>
+                                <p>13:50</p>
+                            </div>
+
+                            <div class="course" style="top :660px">
+                                6
+                                <p>14:00</p>
+                                <p>14:40</p>
+                            </div>
+
+                            <div class="course" style="top :740px">
+                                7
+                                <p>14:40</p>
+                                <p>15:20</p>
+                            </div>
+
+                            <div class="course" style="top :840px">
+                                8
+                                <p>15:30</p>
+                                <p>16:10</p>
+                            </div>
+
+                            <div class="course" style="top :920px">
+                                9
+                                <p>16:60</p>
+                                <p>16:50</p>
+                            </div>
+
+                            <div class="course" style="top: 1020px;height: 160px;background: rgba(32,160,255,.5)">
+                                晚间
+                                <p>17：00</p>
+                                <p>18：20</p>
+                            </div>
+
+                            <div class="course" style="top :1200px">
+                                10
+                                <p>18:30</p>
+                                <p>19:10</p>
+                            </div>
+
+                            <div class="course" style="top :1280px">
+                                11
+                                <p>19:10</p>
+                                <p>19:50</p>
+                            </div>
+
+                            <div class="course" style="top :1380px">
+                                12
+                                <p>20:00</p>
+                                <p>20:40</p>
+                            </div>
+
+                            <div class="course" style="top :1460px">
+                                12
+                                <p>20:40</p>
+                                <p>21:20</p>
+                            </div>
+
+
+                        </div>
+                        <div class="day-col day-col1">
+                        </div>
+                        <div class="day-col day-col2">
+                        </div>
+                        <div class="day-col day-col3">
+                        </div>
+                        <div class="day-col day-col4">
+                        </div>
+                        <div class="day-col day-col5">
+                        </div>
+                        <div class="day-col day-col6">
+                        </div>
+                        <div class="day-col day-col7">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <!--星期头-->
+                <div class="weekday">
+                    <div class="weekday-contain">
+                        <div class="day-time">
+                            <div class="day">周一</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周二</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周三</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周四</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周五</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周六</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周日</div>
+                        </div>
+                    </div>
+                </div>
+                <!--测栏-->
+                <div class="aside-course">
+                    <div class="course-contain">
+                        <div class="day-col day-col0">
+                            <div class="course" style="top: 0">
+                                1
+                                <p>08:30</p>
+                                <p>09:10</p>
+                            </div>
+
+                            <div class="course" style="top: 80px">
+                                2
+                                <p>09:10</p>
+                                <p>09:50</p>
+                            </div>
+
+                            <div class="course" style="top: 180px">
+                                3
+                                <p>10:00</p>
+                                <p>10:40</p>
+                            </div>
+
+                            <div class="course" style="top: 260px">
+                                4
+                                <p>10:40</p>
+                                <p>11:20</p>
+                            </div>
+
+                            <div class="course" style="top: 360px">
+                                5
+                                <p>11:30</p>
+                                <p>12:10</p>
+                            </div>
+
+                            <div class="course" style="top: 460px;height: 180px;background:rgba(32,160,255,.5)">
+                                午间
+                                <p>12:20</p>
+                                <p>13:50</p>
+                            </div>
+
+                            <div class="course" style="top :660px">
+                                6
+                                <p>14:00</p>
+                                <p>14:40</p>
+                            </div>
+
+                            <div class="course" style="top :740px">
+                                7
+                                <p>14:40</p>
+                                <p>15:20</p>
+                            </div>
+
+                            <div class="course" style="top :840px">
+                                8
+                                <p>15:30</p>
+                                <p>16:10</p>
+                            </div>
+
+                            <div class="course" style="top :920px">
+                                9
+                                <p>16:60</p>
+                                <p>16:50</p>
+                            </div>
+
+                            <div class="course" style="top: 1020px;height: 160px;background: rgba(32,160,255,.5)">
+                                晚间
+                                <p>17：00</p>
+                                <p>18：20</p>
+                            </div>
+
+                            <div class="course" style="top :1200px">
+                                10
+                                <p>18:30</p>
+                                <p>19:10</p>
+                            </div>
+
+                            <div class="course" style="top :1280px">
+                                11
+                                <p>19:10</p>
+                                <p>19:50</p>
+                            </div>
+
+                            <div class="course" style="top :1380px">
+                                12
+                                <p>20:00</p>
+                                <p>20:40</p>
+                            </div>
+
+                            <div class="course" style="top :1460px">
+                                12
+                                <p>20:40</p>
+                                <p>21:20</p>
+                            </div>
+
+
+                        </div>
+                        <div class="day-col day-col1">
+                        </div>
+                        <div class="day-col day-col2">
+                        </div>
+                        <div class="day-col day-col3">
+                        </div>
+                        <div class="day-col day-col4">
+                        </div>
+                        <div class="day-col day-col5">
+                        </div>
+                        <div class="day-col day-col6">
+                        </div>
+                        <div class="day-col day-col7">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <!--星期头-->
+                <div class="weekday">
+                    <div class="weekday-contain">
+                        <div class="day-time">
+                            <div class="day">周一</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周二</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周三</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周四</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周五</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周六</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周日</div>
+                        </div>
+                    </div>
+                </div>
+                <!--测栏-->
+                <div class="aside-course">
+                    <div class="course-contain">
+                        <div class="day-col day-col0">
+                            <div class="course" style="top: 0">
+                                1
+                                <p>08:30</p>
+                                <p>09:10</p>
+                            </div>
+
+                            <div class="course" style="top: 80px">
+                                2
+                                <p>09:10</p>
+                                <p>09:50</p>
+                            </div>
+
+                            <div class="course" style="top: 180px">
+                                3
+                                <p>10:00</p>
+                                <p>10:40</p>
+                            </div>
+
+                            <div class="course" style="top: 260px">
+                                4
+                                <p>10:40</p>
+                                <p>11:20</p>
+                            </div>
+
+                            <div class="course" style="top: 360px">
+                                5
+                                <p>11:30</p>
+                                <p>12:10</p>
+                            </div>
+
+                            <div class="course" style="top: 460px;height: 180px;background:rgba(32,160,255,.5)">
+                                午间
+                                <p>12:20</p>
+                                <p>13:50</p>
+                            </div>
+
+                            <div class="course" style="top :660px">
+                                6
+                                <p>14:00</p>
+                                <p>14:40</p>
+                            </div>
+
+                            <div class="course" style="top :740px">
+                                7
+                                <p>14:40</p>
+                                <p>15:20</p>
+                            </div>
+
+                            <div class="course" style="top :840px">
+                                8
+                                <p>15:30</p>
+                                <p>16:10</p>
+                            </div>
+
+                            <div class="course" style="top :920px">
+                                9
+                                <p>16:60</p>
+                                <p>16:50</p>
+                            </div>
+
+                            <div class="course" style="top: 1020px;height: 160px;background: rgba(32,160,255,.5)">
+                                晚间
+                                <p>17：00</p>
+                                <p>18：20</p>
+                            </div>
+
+                            <div class="course" style="top :1200px">
+                                10
+                                <p>18:30</p>
+                                <p>19:10</p>
+                            </div>
+
+                            <div class="course" style="top :1280px">
+                                11
+                                <p>19:10</p>
+                                <p>19:50</p>
+                            </div>
+
+                            <div class="course" style="top :1380px">
+                                12
+                                <p>20:00</p>
+                                <p>20:40</p>
+                            </div>
+
+                            <div class="course" style="top :1460px">
+                                12
+                                <p>20:40</p>
+                                <p>21:20</p>
+                            </div>
+
+
+                        </div>
+                        <div class="day-col day-col1">
+                        </div>
+                        <div class="day-col day-col2">
+                        </div>
+                        <div class="day-col day-col3">
+                        </div>
+                        <div class="day-col day-col4">
+                        </div>
+                        <div class="day-col day-col5">
+                        </div>
+                        <div class="day-col day-col6">
+                        </div>
+                        <div class="day-col day-col7">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <!--星期头-->
+                <div class="weekday">
+                    <div class="weekday-contain">
+                        <div class="day-time">
+                            <div class="day">周一</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周二</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周三</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周四</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周五</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周六</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周日</div>
+                        </div>
+                    </div>
+                </div>
+                <!--测栏-->
+                <div class="aside-course">
+                    <div class="course-contain">
+                        <div class="day-col day-col0">
+                            <div class="course" style="top: 0">
+                                1
+                                <p>08:30</p>
+                                <p>09:10</p>
+                            </div>
+
+                            <div class="course" style="top: 80px">
+                                2
+                                <p>09:10</p>
+                                <p>09:50</p>
+                            </div>
+
+                            <div class="course" style="top: 180px">
+                                3
+                                <p>10:00</p>
+                                <p>10:40</p>
+                            </div>
+
+                            <div class="course" style="top: 260px">
+                                4
+                                <p>10:40</p>
+                                <p>11:20</p>
+                            </div>
+
+                            <div class="course" style="top: 360px">
+                                5
+                                <p>11:30</p>
+                                <p>12:10</p>
+                            </div>
+
+                            <div class="course" style="top: 460px;height: 180px;background:rgba(32,160,255,.5)">
+                                午间
+                                <p>12:20</p>
+                                <p>13:50</p>
+                            </div>
+
+                            <div class="course" style="top :660px">
+                                6
+                                <p>14:00</p>
+                                <p>14:40</p>
+                            </div>
+
+                            <div class="course" style="top :740px">
+                                7
+                                <p>14:40</p>
+                                <p>15:20</p>
+                            </div>
+
+                            <div class="course" style="top :840px">
+                                8
+                                <p>15:30</p>
+                                <p>16:10</p>
+                            </div>
+
+                            <div class="course" style="top :920px">
+                                9
+                                <p>16:60</p>
+                                <p>16:50</p>
+                            </div>
+
+                            <div class="course" style="top: 1020px;height: 160px;background: rgba(32,160,255,.5)">
+                                晚间
+                                <p>17：00</p>
+                                <p>18：20</p>
+                            </div>
+
+                            <div class="course" style="top :1200px">
+                                10
+                                <p>18:30</p>
+                                <p>19:10</p>
+                            </div>
+
+                            <div class="course" style="top :1280px">
+                                11
+                                <p>19:10</p>
+                                <p>19:50</p>
+                            </div>
+
+                            <div class="course" style="top :1380px">
+                                12
+                                <p>20:00</p>
+                                <p>20:40</p>
+                            </div>
+
+                            <div class="course" style="top :1460px">
+                                12
+                                <p>20:40</p>
+                                <p>21:20</p>
+                            </div>
+
+
+                        </div>
+                        <div class="day-col day-col1">
+                        </div>
+                        <div class="day-col day-col2">
+                        </div>
+                        <div class="day-col day-col3">
+                        </div>
+                        <div class="day-col day-col4">
+                        </div>
+                        <div class="day-col day-col5">
+                        </div>
+                        <div class="day-col day-col6">
+                        </div>
+                        <div class="day-col day-col7">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <!--星期头-->
+                <div class="weekday">
+                    <div class="weekday-contain">
+                        <div class="day-time">
+                            <div class="day">周一</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周二</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周三</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周四</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周五</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周六</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周日</div>
+                        </div>
+                    </div>
+                </div>
+                <!--测栏-->
+                <div class="aside-course">
+                    <div class="course-contain">
+                        <div class="day-col day-col0">
+                            <div class="course" style="top: 0">
+                                1
+                                <p>08:30</p>
+                                <p>09:10</p>
+                            </div>
+
+                            <div class="course" style="top: 80px">
+                                2
+                                <p>09:10</p>
+                                <p>09:50</p>
+                            </div>
+
+                            <div class="course" style="top: 180px">
+                                3
+                                <p>10:00</p>
+                                <p>10:40</p>
+                            </div>
+
+                            <div class="course" style="top: 260px">
+                                4
+                                <p>10:40</p>
+                                <p>11:20</p>
+                            </div>
+
+                            <div class="course" style="top: 360px">
+                                5
+                                <p>11:30</p>
+                                <p>12:10</p>
+                            </div>
+
+                            <div class="course" style="top: 460px;height: 180px;background:rgba(32,160,255,.5)">
+                                午间
+                                <p>12:20</p>
+                                <p>13:50</p>
+                            </div>
+
+                            <div class="course" style="top :660px">
+                                6
+                                <p>14:00</p>
+                                <p>14:40</p>
+                            </div>
+
+                            <div class="course" style="top :740px">
+                                7
+                                <p>14:40</p>
+                                <p>15:20</p>
+                            </div>
+
+                            <div class="course" style="top :840px">
+                                8
+                                <p>15:30</p>
+                                <p>16:10</p>
+                            </div>
+
+                            <div class="course" style="top :920px">
+                                9
+                                <p>16:60</p>
+                                <p>16:50</p>
+                            </div>
+
+                            <div class="course" style="top: 1020px;height: 160px;background: rgba(32,160,255,.5)">
+                                晚间
+                                <p>17：00</p>
+                                <p>18：20</p>
+                            </div>
+
+                            <div class="course" style="top :1200px">
+                                10
+                                <p>18:30</p>
+                                <p>19:10</p>
+                            </div>
+
+                            <div class="course" style="top :1280px">
+                                11
+                                <p>19:10</p>
+                                <p>19:50</p>
+                            </div>
+
+                            <div class="course" style="top :1380px">
+                                12
+                                <p>20:00</p>
+                                <p>20:40</p>
+                            </div>
+
+                            <div class="course" style="top :1460px">
+                                12
+                                <p>20:40</p>
+                                <p>21:20</p>
+                            </div>
+
+
+                        </div>
+                        <div class="day-col day-col1">
+                        </div>
+                        <div class="day-col day-col2">
+                        </div>
+                        <div class="day-col day-col3">
+                        </div>
+                        <div class="day-col day-col4">
+                        </div>
+                        <div class="day-col day-col5">
+                        </div>
+                        <div class="day-col day-col6">
+                        </div>
+                        <div class="day-col day-col7">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <!--星期头-->
+                <div class="weekday">
+                    <div class="weekday-contain">
+                        <div class="day-time">
+                            <div class="day">周一</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周二</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周三</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周四</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周五</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周六</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周日</div>
+                        </div>
+                    </div>
+                </div>
+                <!--测栏-->
+                <div class="aside-course">
+                    <div class="course-contain">
+                        <div class="day-col day-col0">
+                            <div class="course" style="top: 0">
+                                1
+                                <p>08:30</p>
+                                <p>09:10</p>
+                            </div>
+
+                            <div class="course" style="top: 80px">
+                                2
+                                <p>09:10</p>
+                                <p>09:50</p>
+                            </div>
+
+                            <div class="course" style="top: 180px">
+                                3
+                                <p>10:00</p>
+                                <p>10:40</p>
+                            </div>
+
+                            <div class="course" style="top: 260px">
+                                4
+                                <p>10:40</p>
+                                <p>11:20</p>
+                            </div>
+
+                            <div class="course" style="top: 360px">
+                                5
+                                <p>11:30</p>
+                                <p>12:10</p>
+                            </div>
+
+                            <div class="course" style="top: 460px;height: 180px;background:rgba(32,160,255,.5)">
+                                午间
+                                <p>12:20</p>
+                                <p>13:50</p>
+                            </div>
+
+                            <div class="course" style="top :660px">
+                                6
+                                <p>14:00</p>
+                                <p>14:40</p>
+                            </div>
+
+                            <div class="course" style="top :740px">
+                                7
+                                <p>14:40</p>
+                                <p>15:20</p>
+                            </div>
+
+                            <div class="course" style="top :840px">
+                                8
+                                <p>15:30</p>
+                                <p>16:10</p>
+                            </div>
+
+                            <div class="course" style="top :920px">
+                                9
+                                <p>16:60</p>
+                                <p>16:50</p>
+                            </div>
+
+                            <div class="course" style="top: 1020px;height: 160px;background: rgba(32,160,255,.5)">
+                                晚间
+                                <p>17：00</p>
+                                <p>18：20</p>
+                            </div>
+
+                            <div class="course" style="top :1200px">
+                                10
+                                <p>18:30</p>
+                                <p>19:10</p>
+                            </div>
+
+                            <div class="course" style="top :1280px">
+                                11
+                                <p>19:10</p>
+                                <p>19:50</p>
+                            </div>
+
+                            <div class="course" style="top :1380px">
+                                12
+                                <p>20:00</p>
+                                <p>20:40</p>
+                            </div>
+
+                            <div class="course" style="top :1460px">
+                                12
+                                <p>20:40</p>
+                                <p>21:20</p>
+                            </div>
+
+
+                        </div>
+                        <div class="day-col day-col1">
+                        </div>
+                        <div class="day-col day-col2">
+                        </div>
+                        <div class="day-col day-col3">
+                        </div>
+                        <div class="day-col day-col4">
+                        </div>
+                        <div class="day-col day-col5">
+                        </div>
+                        <div class="day-col day-col6">
+                        </div>
+                        <div class="day-col day-col7">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <!--星期头-->
+                <div class="weekday">
+                    <div class="weekday-contain">
+                        <div class="day-time">
+                            <div class="day">周一</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周二</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周三</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周四</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周五</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周六</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周日</div>
+                        </div>
+                    </div>
+                </div>
+                <!--测栏-->
+                <div class="aside-course">
+                    <div class="course-contain">
+                        <div class="day-col day-col0">
+                            <div class="course" style="top: 0">
+                                1
+                                <p>08:30</p>
+                                <p>09:10</p>
+                            </div>
+
+                            <div class="course" style="top: 80px">
+                                2
+                                <p>09:10</p>
+                                <p>09:50</p>
+                            </div>
+
+                            <div class="course" style="top: 180px">
+                                3
+                                <p>10:00</p>
+                                <p>10:40</p>
+                            </div>
+
+                            <div class="course" style="top: 260px">
+                                4
+                                <p>10:40</p>
+                                <p>11:20</p>
+                            </div>
+
+                            <div class="course" style="top: 360px">
+                                5
+                                <p>11:30</p>
+                                <p>12:10</p>
+                            </div>
+
+                            <div class="course" style="top: 460px;height: 180px;background:rgba(32,160,255,.5)">
+                                午间
+                                <p>12:20</p>
+                                <p>13:50</p>
+                            </div>
+
+                            <div class="course" style="top :660px">
+                                6
+                                <p>14:00</p>
+                                <p>14:40</p>
+                            </div>
+
+                            <div class="course" style="top :740px">
+                                7
+                                <p>14:40</p>
+                                <p>15:20</p>
+                            </div>
+
+                            <div class="course" style="top :840px">
+                                8
+                                <p>15:30</p>
+                                <p>16:10</p>
+                            </div>
+
+                            <div class="course" style="top :920px">
+                                9
+                                <p>16:60</p>
+                                <p>16:50</p>
+                            </div>
+
+                            <div class="course" style="top: 1020px;height: 160px;background: rgba(32,160,255,.5)">
+                                晚间
+                                <p>17：00</p>
+                                <p>18：20</p>
+                            </div>
+
+                            <div class="course" style="top :1200px">
+                                10
+                                <p>18:30</p>
+                                <p>19:10</p>
+                            </div>
+
+                            <div class="course" style="top :1280px">
+                                11
+                                <p>19:10</p>
+                                <p>19:50</p>
+                            </div>
+
+                            <div class="course" style="top :1380px">
+                                12
+                                <p>20:00</p>
+                                <p>20:40</p>
+                            </div>
+
+                            <div class="course" style="top :1460px">
+                                12
+                                <p>20:40</p>
+                                <p>21:20</p>
+                            </div>
+
+
+                        </div>
+                        <div class="day-col day-col1">
+                        </div>
+                        <div class="day-col day-col2">
+                        </div>
+                        <div class="day-col day-col3">
+                        </div>
+                        <div class="day-col day-col4">
+                        </div>
+                        <div class="day-col day-col5">
+                        </div>
+                        <div class="day-col day-col6">
+                        </div>
+                        <div class="day-col day-col7">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <!--星期头-->
+                <div class="weekday">
+                    <div class="weekday-contain">
+                        <div class="day-time">
+                            <div class="day">周一</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周二</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周三</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周四</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周五</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周六</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周日</div>
+                        </div>
+                    </div>
+                </div>
+                <!--测栏-->
+                <div class="aside-course">
+                    <div class="course-contain">
+                        <div class="day-col day-col0">
+                            <div class="course" style="top: 0">
+                                1
+                                <p>08:30</p>
+                                <p>09:10</p>
+                            </div>
+
+                            <div class="course" style="top: 80px">
+                                2
+                                <p>09:10</p>
+                                <p>09:50</p>
+                            </div>
+
+                            <div class="course" style="top: 180px">
+                                3
+                                <p>10:00</p>
+                                <p>10:40</p>
+                            </div>
+
+                            <div class="course" style="top: 260px">
+                                4
+                                <p>10:40</p>
+                                <p>11:20</p>
+                            </div>
+
+                            <div class="course" style="top: 360px">
+                                5
+                                <p>11:30</p>
+                                <p>12:10</p>
+                            </div>
+
+                            <div class="course" style="top: 460px;height: 180px;background:rgba(32,160,255,.5)">
+                                午间
+                                <p>12:20</p>
+                                <p>13:50</p>
+                            </div>
+
+                            <div class="course" style="top :660px">
+                                6
+                                <p>14:00</p>
+                                <p>14:40</p>
+                            </div>
+
+                            <div class="course" style="top :740px">
+                                7
+                                <p>14:40</p>
+                                <p>15:20</p>
+                            </div>
+
+                            <div class="course" style="top :840px">
+                                8
+                                <p>15:30</p>
+                                <p>16:10</p>
+                            </div>
+
+                            <div class="course" style="top :920px">
+                                9
+                                <p>16:60</p>
+                                <p>16:50</p>
+                            </div>
+
+                            <div class="course" style="top: 1020px;height: 160px;background: rgba(32,160,255,.5)">
+                                晚间
+                                <p>17：00</p>
+                                <p>18：20</p>
+                            </div>
+
+                            <div class="course" style="top :1200px">
+                                10
+                                <p>18:30</p>
+                                <p>19:10</p>
+                            </div>
+
+                            <div class="course" style="top :1280px">
+                                11
+                                <p>19:10</p>
+                                <p>19:50</p>
+                            </div>
+
+                            <div class="course" style="top :1380px">
+                                12
+                                <p>20:00</p>
+                                <p>20:40</p>
+                            </div>
+
+                            <div class="course" style="top :1460px">
+                                12
+                                <p>20:40</p>
+                                <p>21:20</p>
+                            </div>
+
+
+                        </div>
+                        <div class="day-col day-col1">
+                        </div>
+                        <div class="day-col day-col2">
+                        </div>
+                        <div class="day-col day-col3">
+                        </div>
+                        <div class="day-col day-col4">
+                        </div>
+                        <div class="day-col day-col5">
+                        </div>
+                        <div class="day-col day-col6">
+                        </div>
+                        <div class="day-col day-col7">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <!--星期头-->
+                <div class="weekday">
+                    <div class="weekday-contain">
+                        <div class="day-time">
+                            <div class="day">周一</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周二</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周三</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周四</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周五</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周六</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周日</div>
+                        </div>
+                    </div>
+                </div>
+                <!--测栏-->
+                <div class="aside-course">
+                    <div class="course-contain">
+                        <div class="day-col day-col0">
+                            <div class="course" style="top: 0">
+                                1
+                                <p>08:30</p>
+                                <p>09:10</p>
+                            </div>
+
+                            <div class="course" style="top: 80px">
+                                2
+                                <p>09:10</p>
+                                <p>09:50</p>
+                            </div>
+
+                            <div class="course" style="top: 180px">
+                                3
+                                <p>10:00</p>
+                                <p>10:40</p>
+                            </div>
+
+                            <div class="course" style="top: 260px">
+                                4
+                                <p>10:40</p>
+                                <p>11:20</p>
+                            </div>
+
+                            <div class="course" style="top: 360px">
+                                5
+                                <p>11:30</p>
+                                <p>12:10</p>
+                            </div>
+
+                            <div class="course" style="top: 460px;height: 180px;background:rgba(32,160,255,.5)">
+                                午间
+                                <p>12:20</p>
+                                <p>13:50</p>
+                            </div>
+
+                            <div class="course" style="top :660px">
+                                6
+                                <p>14:00</p>
+                                <p>14:40</p>
+                            </div>
+
+                            <div class="course" style="top :740px">
+                                7
+                                <p>14:40</p>
+                                <p>15:20</p>
+                            </div>
+
+                            <div class="course" style="top :840px">
+                                8
+                                <p>15:30</p>
+                                <p>16:10</p>
+                            </div>
+
+                            <div class="course" style="top :920px">
+                                9
+                                <p>16:60</p>
+                                <p>16:50</p>
+                            </div>
+
+                            <div class="course" style="top: 1020px;height: 160px;background: rgba(32,160,255,.5)">
+                                晚间
+                                <p>17：00</p>
+                                <p>18：20</p>
+                            </div>
+
+                            <div class="course" style="top :1200px">
+                                10
+                                <p>18:30</p>
+                                <p>19:10</p>
+                            </div>
+
+                            <div class="course" style="top :1280px">
+                                11
+                                <p>19:10</p>
+                                <p>19:50</p>
+                            </div>
+
+                            <div class="course" style="top :1380px">
+                                12
+                                <p>20:00</p>
+                                <p>20:40</p>
+                            </div>
+
+                            <div class="course" style="top :1460px">
+                                12
+                                <p>20:40</p>
+                                <p>21:20</p>
+                            </div>
+
+
+                        </div>
+                        <div class="day-col day-col1">
+                        </div>
+                        <div class="day-col day-col2">
+                        </div>
+                        <div class="day-col day-col3">
+                        </div>
+                        <div class="day-col day-col4">
+                        </div>
+                        <div class="day-col day-col5">
+                        </div>
+                        <div class="day-col day-col6">
+                        </div>
+                        <div class="day-col day-col7">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <!--星期头-->
+                <div class="weekday">
+                    <div class="weekday-contain">
+                        <div class="day-time">
+                            <div class="day">周一</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周二</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周三</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周四</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周五</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周六</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周日</div>
+                        </div>
+                    </div>
+                </div>
+                <!--测栏-->
+                <div class="aside-course">
+                    <div class="course-contain">
+                        <div class="day-col day-col0">
+                            <div class="course" style="top: 0">
+                                1
+                                <p>08:30</p>
+                                <p>09:10</p>
+                            </div>
+
+                            <div class="course" style="top: 80px">
+                                2
+                                <p>09:10</p>
+                                <p>09:50</p>
+                            </div>
+
+                            <div class="course" style="top: 180px">
+                                3
+                                <p>10:00</p>
+                                <p>10:40</p>
+                            </div>
+
+                            <div class="course" style="top: 260px">
+                                4
+                                <p>10:40</p>
+                                <p>11:20</p>
+                            </div>
+
+                            <div class="course" style="top: 360px">
+                                5
+                                <p>11:30</p>
+                                <p>12:10</p>
+                            </div>
+
+                            <div class="course" style="top: 460px;height: 180px;background:rgba(32,160,255,.5)">
+                                午间
+                                <p>12:20</p>
+                                <p>13:50</p>
+                            </div>
+
+                            <div class="course" style="top :660px">
+                                6
+                                <p>14:00</p>
+                                <p>14:40</p>
+                            </div>
+
+                            <div class="course" style="top :740px">
+                                7
+                                <p>14:40</p>
+                                <p>15:20</p>
+                            </div>
+
+                            <div class="course" style="top :840px">
+                                8
+                                <p>15:30</p>
+                                <p>16:10</p>
+                            </div>
+
+                            <div class="course" style="top :920px">
+                                9
+                                <p>16:60</p>
+                                <p>16:50</p>
+                            </div>
+
+                            <div class="course" style="top: 1020px;height: 160px;background: rgba(32,160,255,.5)">
+                                晚间
+                                <p>17：00</p>
+                                <p>18：20</p>
+                            </div>
+
+                            <div class="course" style="top :1200px">
+                                10
+                                <p>18:30</p>
+                                <p>19:10</p>
+                            </div>
+
+                            <div class="course" style="top :1280px">
+                                11
+                                <p>19:10</p>
+                                <p>19:50</p>
+                            </div>
+
+                            <div class="course" style="top :1380px">
+                                12
+                                <p>20:00</p>
+                                <p>20:40</p>
+                            </div>
+
+                            <div class="course" style="top :1460px">
+                                12
+                                <p>20:40</p>
+                                <p>21:20</p>
+                            </div>
+
+
+                        </div>
+                        <div class="day-col day-col1">
+                        </div>
+                        <div class="day-col day-col2">
+                        </div>
+                        <div class="day-col day-col3">
+                        </div>
+                        <div class="day-col day-col4">
+                        </div>
+                        <div class="day-col day-col5">
+                        </div>
+                        <div class="day-col day-col6">
+                        </div>
+                        <div class="day-col day-col7">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <!--星期头-->
+                <div class="weekday">
+                    <div class="weekday-contain">
+                        <div class="day-time">
+                            <div class="day">周一</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周二</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周三</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周四</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周五</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周六</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周日</div>
+                        </div>
+                    </div>
+                </div>
+                <!--测栏-->
+                <div class="aside-course">
+                    <div class="course-contain">
+                        <div class="day-col day-col0">
+                            <div class="course" style="top: 0">
+                                1
+                                <p>08:30</p>
+                                <p>09:10</p>
+                            </div>
+
+                            <div class="course" style="top: 80px">
+                                2
+                                <p>09:10</p>
+                                <p>09:50</p>
+                            </div>
+
+                            <div class="course" style="top: 180px">
+                                3
+                                <p>10:00</p>
+                                <p>10:40</p>
+                            </div>
+
+                            <div class="course" style="top: 260px">
+                                4
+                                <p>10:40</p>
+                                <p>11:20</p>
+                            </div>
+
+                            <div class="course" style="top: 360px">
+                                5
+                                <p>11:30</p>
+                                <p>12:10</p>
+                            </div>
+
+                            <div class="course" style="top: 460px;height: 180px;background:rgba(32,160,255,.5)">
+                                午间
+                                <p>12:20</p>
+                                <p>13:50</p>
+                            </div>
+
+                            <div class="course" style="top :660px">
+                                6
+                                <p>14:00</p>
+                                <p>14:40</p>
+                            </div>
+
+                            <div class="course" style="top :740px">
+                                7
+                                <p>14:40</p>
+                                <p>15:20</p>
+                            </div>
+
+                            <div class="course" style="top :840px">
+                                8
+                                <p>15:30</p>
+                                <p>16:10</p>
+                            </div>
+
+                            <div class="course" style="top :920px">
+                                9
+                                <p>16:60</p>
+                                <p>16:50</p>
+                            </div>
+
+                            <div class="course" style="top: 1020px;height: 160px;background: rgba(32,160,255,.5)">
+                                晚间
+                                <p>17：00</p>
+                                <p>18：20</p>
+                            </div>
+
+                            <div class="course" style="top :1200px">
+                                10
+                                <p>18:30</p>
+                                <p>19:10</p>
+                            </div>
+
+                            <div class="course" style="top :1280px">
+                                11
+                                <p>19:10</p>
+                                <p>19:50</p>
+                            </div>
+
+                            <div class="course" style="top :1380px">
+                                12
+                                <p>20:00</p>
+                                <p>20:40</p>
+                            </div>
+
+                            <div class="course" style="top :1460px">
+                                12
+                                <p>20:40</p>
+                                <p>21:20</p>
+                            </div>
+
+
+                        </div>
+                        <div class="day-col day-col1">
+                        </div>
+                        <div class="day-col day-col2">
+                        </div>
+                        <div class="day-col day-col3">
+                        </div>
+                        <div class="day-col day-col4">
+                        </div>
+                        <div class="day-col day-col5">
+                        </div>
+                        <div class="day-col day-col6">
+                        </div>
+                        <div class="day-col day-col7">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <!--星期头-->
+                <div class="weekday">
+                    <div class="weekday-contain">
+                        <div class="day-time">
+                            <div class="day">周一</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周二</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周三</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周四</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周五</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周六</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周日</div>
+                        </div>
+                    </div>
+                </div>
+                <!--测栏-->
+                <div class="aside-course">
+                    <div class="course-contain">
+                        <div class="day-col day-col0">
+                            <div class="course" style="top: 0">
+                                1
+                                <p>08:30</p>
+                                <p>09:10</p>
+                            </div>
+
+                            <div class="course" style="top: 80px">
+                                2
+                                <p>09:10</p>
+                                <p>09:50</p>
+                            </div>
+
+                            <div class="course" style="top: 180px">
+                                3
+                                <p>10:00</p>
+                                <p>10:40</p>
+                            </div>
+
+                            <div class="course" style="top: 260px">
+                                4
+                                <p>10:40</p>
+                                <p>11:20</p>
+                            </div>
+
+                            <div class="course" style="top: 360px">
+                                5
+                                <p>11:30</p>
+                                <p>12:10</p>
+                            </div>
+
+                            <div class="course" style="top: 460px;height: 180px;background:rgba(32,160,255,.5)">
+                                午间
+                                <p>12:20</p>
+                                <p>13:50</p>
+                            </div>
+
+                            <div class="course" style="top :660px">
+                                6
+                                <p>14:00</p>
+                                <p>14:40</p>
+                            </div>
+
+                            <div class="course" style="top :740px">
+                                7
+                                <p>14:40</p>
+                                <p>15:20</p>
+                            </div>
+
+                            <div class="course" style="top :840px">
+                                8
+                                <p>15:30</p>
+                                <p>16:10</p>
+                            </div>
+
+                            <div class="course" style="top :920px">
+                                9
+                                <p>16:60</p>
+                                <p>16:50</p>
+                            </div>
+
+                            <div class="course" style="top: 1020px;height: 160px;background: rgba(32,160,255,.5)">
+                                晚间
+                                <p>17：00</p>
+                                <p>18：20</p>
+                            </div>
+
+                            <div class="course" style="top :1200px">
+                                10
+                                <p>18:30</p>
+                                <p>19:10</p>
+                            </div>
+
+                            <div class="course" style="top :1280px">
+                                11
+                                <p>19:10</p>
+                                <p>19:50</p>
+                            </div>
+
+                            <div class="course" style="top :1380px">
+                                12
+                                <p>20:00</p>
+                                <p>20:40</p>
+                            </div>
+
+                            <div class="course" style="top :1460px">
+                                12
+                                <p>20:40</p>
+                                <p>21:20</p>
+                            </div>
+
+
+                        </div>
+                        <div class="day-col day-col1">
+                        </div>
+                        <div class="day-col day-col2">
+                        </div>
+                        <div class="day-col day-col3">
+                        </div>
+                        <div class="day-col day-col4">
+                        </div>
+                        <div class="day-col day-col5">
+                        </div>
+                        <div class="day-col day-col6">
+                        </div>
+                        <div class="day-col day-col7">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <!--星期头-->
+                <div class="weekday">
+                    <div class="weekday-contain">
+                        <div class="day-time">
+                            <div class="day">周一</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周二</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周三</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周四</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周五</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周六</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周日</div>
+                        </div>
+                    </div>
+                </div>
+                <!--测栏-->
+                <div class="aside-course">
+                    <div class="course-contain">
+                        <div class="day-col day-col0">
+                            <div class="course" style="top: 0">
+                                1
+                                <p>08:30</p>
+                                <p>09:10</p>
+                            </div>
+
+                            <div class="course" style="top: 80px">
+                                2
+                                <p>09:10</p>
+                                <p>09:50</p>
+                            </div>
+
+                            <div class="course" style="top: 180px">
+                                3
+                                <p>10:00</p>
+                                <p>10:40</p>
+                            </div>
+
+                            <div class="course" style="top: 260px">
+                                4
+                                <p>10:40</p>
+                                <p>11:20</p>
+                            </div>
+
+                            <div class="course" style="top: 360px">
+                                5
+                                <p>11:30</p>
+                                <p>12:10</p>
+                            </div>
+
+                            <div class="course" style="top: 460px;height: 180px;background:rgba(32,160,255,.5)">
+                                午间
+                                <p>12:20</p>
+                                <p>13:50</p>
+                            </div>
+
+                            <div class="course" style="top :660px">
+                                6
+                                <p>14:00</p>
+                                <p>14:40</p>
+                            </div>
+
+                            <div class="course" style="top :740px">
+                                7
+                                <p>14:40</p>
+                                <p>15:20</p>
+                            </div>
+
+                            <div class="course" style="top :840px">
+                                8
+                                <p>15:30</p>
+                                <p>16:10</p>
+                            </div>
+
+                            <div class="course" style="top :920px">
+                                9
+                                <p>16:60</p>
+                                <p>16:50</p>
+                            </div>
+
+                            <div class="course" style="top: 1020px;height: 160px;background: rgba(32,160,255,.5)">
+                                晚间
+                                <p>17：00</p>
+                                <p>18：20</p>
+                            </div>
+
+                            <div class="course" style="top :1200px">
+                                10
+                                <p>18:30</p>
+                                <p>19:10</p>
+                            </div>
+
+                            <div class="course" style="top :1280px">
+                                11
+                                <p>19:10</p>
+                                <p>19:50</p>
+                            </div>
+
+                            <div class="course" style="top :1380px">
+                                12
+                                <p>20:00</p>
+                                <p>20:40</p>
+                            </div>
+
+                            <div class="course" style="top :1460px">
+                                12
+                                <p>20:40</p>
+                                <p>21:20</p>
+                            </div>
+
+
+                        </div>
+                        <div class="day-col day-col1">
+                        </div>
+                        <div class="day-col day-col2">
+                        </div>
+                        <div class="day-col day-col3">
+                        </div>
+                        <div class="day-col day-col4">
+                        </div>
+                        <div class="day-col day-col5">
+                        </div>
+                        <div class="day-col day-col6">
+                        </div>
+                        <div class="day-col day-col7">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <!--星期头-->
+                <div class="weekday">
+                    <div class="weekday-contain">
+                        <div class="day-time">
+                            <div class="day">周一</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周二</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周三</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周四</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周五</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周六</div>
+                        </div>
+                        <div class="day-time">
+                            <div class="day">周日</div>
+                        </div>
+                    </div>
+                </div>
+                <!--测栏-->
+                <div class="aside-course">
+                    <div class="course-contain">
+                        <div class="day-col day-col0">
+                            <div class="course" style="top: 0">
+                                1
+                                <p>08:30</p>
+                                <p>09:10</p>
+                            </div>
+
+                            <div class="course" style="top: 80px">
+                                2
+                                <p>09:10</p>
+                                <p>09:50</p>
+                            </div>
+
+                            <div class="course" style="top: 180px">
+                                3
+                                <p>10:00</p>
+                                <p>10:40</p>
+                            </div>
+
+                            <div class="course" style="top: 260px">
+                                4
+                                <p>10:40</p>
+                                <p>11:20</p>
+                            </div>
+
+                            <div class="course" style="top: 360px">
+                                5
+                                <p>11:30</p>
+                                <p>12:10</p>
+                            </div>
+
+                            <div class="course" style="top: 460px;height: 180px;background:rgba(32,160,255,.5)">
+                                午间
+                                <p>12:20</p>
+                                <p>13:50</p>
+                            </div>
+
+                            <div class="course" style="top :660px">
+                                6
+                                <p>14:00</p>
+                                <p>14:40</p>
+                            </div>
+
+                            <div class="course" style="top :740px">
+                                7
+                                <p>14:40</p>
+                                <p>15:20</p>
+                            </div>
+
+                            <div class="course" style="top :840px">
+                                8
+                                <p>15:30</p>
+                                <p>16:10</p>
+                            </div>
+
+                            <div class="course" style="top :920px">
+                                9
+                                <p>16:60</p>
+                                <p>16:50</p>
+                            </div>
+
+                            <div class="course" style="top: 1020px;height: 160px;background: rgba(32,160,255,.5)">
+                                晚间
+                                <p>17：00</p>
+                                <p>18：20</p>
+                            </div>
+
+                            <div class="course" style="top :1200px">
+                                10
+                                <p>18:30</p>
+                                <p>19:10</p>
+                            </div>
+
+                            <div class="course" style="top :1280px">
+                                11
+                                <p>19:10</p>
+                                <p>19:50</p>
+                            </div>
+
+                            <div class="course" style="top :1380px">
+                                12
+                                <p>20:00</p>
+                                <p>20:40</p>
+                            </div>
+
+                            <div class="course" style="top :1460px">
+                                12
+                                <p>20:40</p>
+                                <p>21:20</p>
+                            </div>
+
+
+                        </div>
+                        <div class="day-col day-col1">
+                        </div>
+                        <div class="day-col day-col2">
+                        </div>
+                        <div class="day-col day-col3">
+                        </div>
+                        <div class="day-col day-col4">
+                        </div>
+                        <div class="day-col day-col5">
+                        </div>
+                        <div class="day-col day-col6">
+                        </div>
+                        <div class="day-col day-col7">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+$(".week-control>.header").css("backgroundImage", "url(" + window.user.headUrl + ")")
+course = window.user.course;
+
+/*时间初始化*/
+
+/*时间对象获取星期*/
+function getWeek(dataTime) {
+    var dateDiff = dataTime.getTime() - new Date("2022-02-21 00:00:00").getTime();//时间差的毫秒数
+    var difftime = dateDiff / 1000; //计算时间差,并把毫秒转换成秒
+    var days = parseInt(difftime / 86400);
+
+    return  parseInt((days / 7))
+}
+
+/*星期跳转本星期指定*/
+weekInitIndex = getWeek(new Date())
+$(".translate-overlay .index-week").eq(weekInitIndex).addClass("current")
+
+/*course课程的swiper*/
+window.courseSwiper = new Swiper('.mySwiper', {
+    initialSlide: weekInitIndex,
+    runCallbacksOnInit: true, //如果不想触发，将此设置为false
+    on: {
+        slideChangeTransitionEnd: function () {
+            // alert(this.activeIndex);
+            $("#weekNumber").html(this.activeIndex + 1)
+        },
+    },
+});
+
+/*课程活动渲染*/
+for (i = 0; i < course.length; i++) {
+
+    /*声明使用的变量*/
+    let newCourse;
+    let courseParam;
+    let weekParam;
+    let dayTimeSimple;
+
+    /*获取多个课表*/
+    courseParam = course[i]
+    dayTimeSimple = courseParam.dayTimeSimple;
+
+    /*颜色保存于elementInit.js*/
+    let color = window.color[i % 8]
+
+    for (j = 0; j < courseParam.week.length; j++) { /*选择星期区间*/
+
+        weekParam = courseParam.week[j]
+        /*循环获取每个课表的星期(一个课的多个星期区间)*/
+        //course[i] 当前星期课程，
+        //week[i] 该课程的不同区间
+        if (weekParam.length < 2) {  /*星期但是一个星期*/
+            /*但星期处理，基本等于本星期活动*/
+
+            newCourse = $("<div class=\"course\" data-index=" + i + " style=\"top:" + dayTimeSimple.top + "px;background-color:" + color[0] + ";color:" + color[1] + "; height:" + dayTimeSimple.height + "px \">" +
+                "<p><b><i>" + courseParam.courseName + "</i></b></p>" + "<div class='teacher'>" +
+                "<p>" + courseParam.className + "</p>" +
+                "<p>" + courseParam.teacherName + "</p>" + "</div>" +
+                "</div>")
+            $(".aside-course").eq(weekParam[0]-1).find(".day-col").eq(courseParam.day).append(newCourse)
+
+            newCourse.on("click", function (e) {
+
+                /*查找当前节点代表的课程*/
+                let index = e.currentTarget.dataset.index
+                let course = window.user.course[index];
+
+                /*课程名字显示*/
+                $(".message-show .course-message").children("h3").html(course.courseName);
+
+                /*星期数据转字符串数组*/
+                let weekString = []
+                for (let i = 0; i < course.week.length; i++) {
+                    if (course.week[i].length < 2) {
+                        weekString.push(course.week[i][j][0] + "周")
+                    } else {
+                        weekString.push(course.week[i][0] + "-" + course.week[i][1] + "周")
+                    }
+                }
+
+                /*星期字符串数组转星期字符串*/
+                $(".message-show .course-message").find(".week").html(weekString.join("、"));
+
+                /*时间显示*/
+                let dayTimeString = course.dayTime[0][0] + ":" + (course.dayTime[0][1]===0)? "00" : course.dayTime[0][1] + "-" + course.dayTime[1][0] + ":" + course.dayTime[1][1]===0? "00" : course.dayTime[1][1]
+
+                $(".message-show .course-message").find(".day").html(dayTimeString)
+                $(".message-show .course-message").find(".class").html(course.className)
+                $(".message-show .course-message").find(".teacher").html(course.teacherName)
+
+                $(".couese-overlay").fadeToggle();
+            })
+
+        } else {
+            for (let courseweek = weekParam[0] - 1; courseweek < weekParam[1]; courseweek++) {  /*单独星期区间处理*/
+
+                /*创建节点*/
+                newCourse = $("<div class=\"course\" data-index=" + i + " style=\"top:" + dayTimeSimple.top + "px;background-color:" + color[0] + ";color:" + color[1] + "; height:" + dayTimeSimple.height + "px \">" +
+                    "<p><b><i>" + courseParam.courseName + "</i></b></p>" + "<div class='teacher'>" +
+                    "<p>" + courseParam.className + "</p>" +
+                    "<p>" + courseParam.teacherName + "</p>" + "</div>" +
+                    "</div>")
+
+                /*找星期的页，之后找列，高值之前创建节点已经绑定*/
+                $(".aside-course").eq(courseweek).find(".day-col").eq(courseParam.day).append(newCourse)
+
+                /*时间绑定*/
+                newCourse.on("click", function (e) {
+
+                    /*查找当前节点代表的课程*/
+                    let index = e.currentTarget.dataset.index
+                    let course = window.user.course[index];
+
+                    /*课程名字显示*/
+                    $(".message-show .course-message").children("h3").html(course.courseName);
+
+                    /*星期数据转字符串数组*/
+                    let weekString = []
+                    for (let i = 0; i < course.week.length; i++) {
+                        if (course.week[i].length < 2) {
+                            weekString.push(course.week[i][j][0] + "周")
+                        } else {
+                            weekString.push(course.week[i][0] + "-" + course.week[i][1] + "周")
+                        }
+                    }
+
+                    /*星期字符串数组转星期字符串*/
+                    $(".message-show .course-message").find(".week").html(weekString.join("、"));
+
+                    /*时间显示*/
+                    let dayTimeString = course.dayTime[0][0] + ":" + (course.dayTime[0][1]===0)? "00" : course.dayTime[0][1] + "-" + course.dayTime[1][0] + ":" + course.dayTime[1][1]===0? "00" : course.dayTime[1][1]
+
+                    $(".message-show .course-message").find(".day").html(dayTimeString)
+                    $(".message-show .course-message").find(".class").html(course.className)
+                    $(".message-show .course-message").find(".teacher").html(course.teacherName)
+
+                    $(".couese-overlay").fadeToggle();
+                })
+
+            }
+        }
+    }
+}
+
+$(".overlay .message-show").on("click", function (e) {
+    e.stopPropagation()
+})
+$(".overlay").on("click", function (e) {
+    $(this).fadeOut();
+})
+$(".translate-overlay .index-week").click(function (e) {
+    let swiper = window.courseSwiper
+    console.log(-(swiper.width * ($(this).data("index") - 1)))
+
+    swiper.setTranslate(-(swiper.width * ($(this).data("index") - 1)))
+    $("#weekNumber").html($(this).data("index"))
+})
+</script>

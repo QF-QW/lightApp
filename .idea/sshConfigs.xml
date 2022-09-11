@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" id="148ebca6-91b5-4982-b8d0-77cdce05d308" customName="test" nameFormat="CUSTOM">
+        <option name="customName" value="test" />
+      </sshConfig>
+    </configs>
+  </component>
+</project>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link href="/static/css/errorpage/505css/5001.css" rel="stylesheet">
+<link href="/static/css/errorpage/505css/500error.css" rel="stylesheet">
+<body class="loading">
+<h1>505 Error</h1>
+<h2>Unexpected Error <b>:(</b></h2>
+<div class="gears">
+
+    <div class="gear one">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <div class="gear two">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <div class="gear three">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+
+    <div class="link-container">
+        <a target="_blank" href="/static/html/home.html" class="more-link">return to home page</a>
+    </div>
+</div>
+<script src="/static/js/JsUnit/jquery-3.6.0.js"></script>
+
+<script>
+    $(function() {
+        setTimeout(function(){
+            $('body').removeClass('loading');
+        }, 1000);
+    });
+
+</script>
+</body>
+</html>

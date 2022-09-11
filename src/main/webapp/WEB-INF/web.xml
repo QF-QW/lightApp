@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!--配置文件-->
+    <jsp-config>
+        <jsp-property-group>
+            <display-name>HtmlConfiguration</display-name>
+            <url-pattern>*.html</url-pattern>
+            <page-encoding>UTF-8</page-encoding>
+        </jsp-property-group>
+        <jsp-property-group>
+            <display-name>JspConfiguration</display-name>
+            <url-pattern>*.jsp</url-pattern>
+            <page-encoding>UTF-8</page-encoding>
+        </jsp-property-group>
+
+
+        <jsp-property-group>
+            <url-pattern>/static/js/swiper/swiper-bundle.min.js</url-pattern>
+            <el-ignored>true</el-ignored>
+        </jsp-property-group>
+
+        <jsp-property-group>
+            <display-name>JsConfiguration</display-name>
+            <url-pattern>*.js</url-pattern>
+            <page-encoding>UTF-8</page-encoding>
+            <default-content-type>application/x-javascript</default-content-type>
+        </jsp-property-group>
+
+    </jsp-config>
+
+    <!--欢迎页面-->
+    <welcome-file-list>
+        <welcome-file>/index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!--课表获取服务页面-->
+    <servlet>
+        <servlet-name>selenium</servlet-name>
+        <servlet-class>com.QW.servlet.GetCourseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>selenium</servlet-name>
+        <url-pattern>/Login/se.do</url-pattern>
+    </servlet-mapping>
+
+    <!--登录的页面-->
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>com.QW.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/Login.do</url-pattern>
+    </servlet-mapping>
+
+
+    <!--课表获取程序-->
+    <servlet>
+        <servlet-name>GetCourseServlet</servlet-name>
+        <servlet-class>com.QW.servlet.GetUserJsonServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetCourseServlet</servlet-name>
+        <url-pattern>/Login/GetUserJsonServlet.do</url-pattern>
+    </servlet-mapping>
+
+    <!--页面跳转程序-->
+    <servlet>
+        <servlet-name>GetPageServlet</servlet-name>
+        <servlet-class>com.QW.servlet.GetPageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetPageServlet</servlet-name>
+        <url-pattern>/Login/GetPageServlet.do</url-pattern>
+    </servlet-mapping>
+
+    <!--获取好友列表-->
+    <servlet>
+        <servlet-name>GetFriend</servlet-name>
+        <servlet-class>com.QW.servlet.YBServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetFriend</servlet-name>
+        <url-pattern>/Login/YBServlet.do</url-pattern>
+    </servlet-mapping>
+
+    <!--社团创建-->
+
+    <servlet>
+        <servlet-name>Societies</servlet-name>
+        <servlet-class>com.QW.servlet.SocietiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Societies</servlet-name>
+        <url-pattern>/Login/Societies.do</url-pattern>
+    </servlet-mapping>
+
+    <!--活动创建-->
+
+    <servlet>
+        <servlet-name>ActiveList</servlet-name>
+        <servlet-class>com.QW.servlet.ActiveListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ActiveList</servlet-name>
+        <url-pattern>/Login/ActiveList.do</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>CharacterEncodingFilter</filter-name>
+        <!--suppress WebProperties -->
+        <filter-class>com.QW.filter.CharacterEncodingFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>CharacterEncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+
+    <filter>
+        <filter-name>LoginFilter</filter-name>
+        <!--suppress WebProperties -->
+        <filter-class>com.QW.filter.LoginFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/static/html/*</url-pattern>
+        <url-pattern>/Login/*</url-pattern>
+    </filter-mapping>
+
+
+    <!--session超时-->
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+    <error-page>
+        <error-code>404</error-code>
+        <location>/static/html/errorpage/404.html</location>
+    </error-page>
+
+    <servlet>
+        <servlet-name>jsp</servlet-name>
+        <servlet-class>org.apache.jasper.servlet.JspServlet</servlet-class>
+        <init-param>
+            <param-name>mappedfile</param-name>
+            <param-value>false</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>jsp</servlet-name>
+        <url-pattern>/static/js/JsUnit/jquery-3.6.0.js</url-pattern>
+    </servlet-mapping>
+
+
+    <!--    <error-page>-->
+    <!--        <error-code>500</error-code>-->
+    <!--        <location>/static/html/errorpage/500.html</location>-->
+    <!--    </error-page>-->
+<!--    <listener>-->
+<!--        <listener-class>com.QW.service.WebSocketServer.WebSocketInit</listener-class>-->
+<!--    </listener>-->
+
+</web-app>

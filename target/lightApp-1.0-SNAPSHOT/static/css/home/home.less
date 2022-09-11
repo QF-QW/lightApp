@@ -1,0 +1,215 @@
+.home {
+  background: #f0f2f5;
+  height: 100vh;
+
+  .defaultButton{
+    box-shadow: 0.133rem 0.133rem 0.133rem rgba(0,0,0,0.1),
+      -0.1rem -0.1rem 0.1rem #ffffff;
+  }
+
+  .activeButton{
+    box-shadow: inset 0.133rem 0.133rem 0.133rem rgba(0,0,0,0.1),
+      inset -0.133rem -0.133rem 0.133rem rgba(255,255,255);
+  }
+
+  .svg-background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .head-friend{
+    box-shadow: 0 3px 3px #00000010;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+
+
+    .head-search{
+      position: relative;
+      display: flex;
+      //background: #00000050;
+      backdrop-filter: blur(10px);
+      width: 10rem;
+      height: 1.2rem;
+
+      //justify-content: space-around;
+
+      .head{
+        background-size: cover;
+        //clip-path: polygon(0 50%, 50% 0, 100% 50%, 50% 100%);
+        position: absolute;
+        width: 0.9rem;
+        height: 0.9rem;
+        z-index: 100;
+        top: 0.15rem;
+        border-radius: 0.267rem;
+        left: 0.533rem;
+
+        .defaultButton();
+        border: none;
+
+      }
+
+      .search{
+        padding: 0.267rem;
+        top: 0.15rem;
+        left: 1.7rem;
+        position: absolute;
+        width: 6rem;
+        height: 0.9rem;
+        background: transparent;
+        text-align: center;
+
+        border: none;
+        outline: none;
+        transition-duration: 0.5s;
+
+        &:focus{
+          .activeButton();
+          font-size: 0.32rem;
+          border-radius: 0.533rem;
+          box-shadow: 0.133rem 0.133rem 0.133rem rgba(0,0,0,0.1);
+          background: white;
+        }
+
+
+      }
+      --primary-light: #8abdff;
+      --primary: #6d5dfc;
+      --primary-dark: #5b0eeb;
+
+      --white: #FFFFFF;
+      --greyLight-1: #E4EBF5;
+      --greyLight-2: #c8d0e7;
+      --greyLight-3: #bec8e4;
+      --greyDark: #9baacf;
+
+      .scanning{
+        background-size: cover;
+        //clip-path: polygon(0 50%, 50% 0, 100% 50%, 50% 100%);
+        position: absolute;
+        width: 0.9rem;
+        height: 0.9rem;
+        z-index: 100;
+        top: 0.15rem;
+        border-radius: 0.267rem;
+        right: 1.2rem;
+        box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+        border: none;
+      }
+
+      .mail{
+        background-size: cover;
+        //clip-path: polygon(0 50%, 50% 0, 100% 50%, 50% 100%);
+        position: absolute;
+        width: 0.9rem;
+        height: 0.9rem;
+        z-index: 100;
+        top: 0.15rem;
+        border-radius: 0.267rem;
+        right: 0.08rem;
+
+        .defaultButton();
+        border: none;
+      }
+    }
+
+    .friend-list{
+      .swiper{
+        margin: 0 0.5rem;
+        padding: 0 5px;
+
+        .swiper-wrapper{
+          height: 1.9rem;
+          align-items: center;
+
+          justify-content: space-between;
+
+          .swiper-slide{
+            overflow: visible;
+            border-radius: 50%;
+            width: 1.5rem;
+            height: 1.5rem;
+            .defaultButton()
+          }
+        }
+      }
+    }
+  }
+
+  .img-show{
+    overflow:hidden;
+    margin-top: 0.2rem;
+    .swiper{
+      display: flex;
+      align-items: center;
+      width: 10rem;
+      height: 6rem;
+      overflow: visible;
+
+      .swiper-slide{
+        top: 0.25rem;
+        width: 6rem;
+        height: 4rem;
+        //background: url("../../img/home/pexels-alina-vilchenko-2099266.jpg");
+        background: #f0f2f5;
+        background-size: cover;
+        border: 0.01rem solid white;
+        box-shadow: 0.133rem 0.133rem 0.133rem rgba(0,0,0,0.1);
+        border-radius: 0.5rem;
+        transition-duration: 0.25s;
+        overflow: hidden;
+
+        .list{
+          font-size: 12px;
+          width: 6rem;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+
+          .message{
+            border-radius: 15px;
+            position: relative;
+            width: 4rem;
+            height: 1rem;
+            right: 0;
+            .svg-background();
+            .defaultButton();
+
+            &:hover{
+              height: 4rem;
+              z-index: 100;
+            }
+          }
+
+          .icon{
+            width: 1rem;
+            height: 1rem;
+            margin: 5px 2px;
+            border-radius: 50%;
+            .svg-background();
+            .defaultButton();
+          }
+        }
+
+
+      }
+
+      .swiper-slide-active{
+        transform: scale(1.15,1.15) translateY(20px);
+        z-index: 9000;
+      }
+    }
+  }
+
+  .todoList{
+    margin-top: -1.2rem;
+    margin-left: 0.25rem;
+    width: 9.5rem;
+    min-height: 9.5rem;
+    height: 2rem;
+    border-radius: 15px;
+    box-shadow:5px 5px 5px rgb(0 0 0 / 10%), -5px -5px 5px #ffffff;
+  }
+
+}

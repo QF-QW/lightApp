@@ -1,0 +1,176 @@
+.home {
+  background: #f0f2f5;
+  height: 100vh;
+}
+.home .defaultButton {
+  box-shadow: 0.133rem 0.133rem 0.133rem rgba(0, 0, 0, 0.1), -0.1rem -0.1rem 0.1rem #ffffff;
+}
+.home .activeButton {
+  box-shadow: inset 0.133rem 0.133rem 0.133rem rgba(0, 0, 0, 0.1), inset -0.133rem -0.133rem 0.133rem rgba(255, 255, 255);
+}
+.home .svg-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .head-friend {
+  box-shadow: 0 3px 3px #00000010;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.home .head-friend .head-search {
+  position: relative;
+  display: flex;
+  backdrop-filter: blur(10px);
+  width: 10rem;
+  height: 1.2rem;
+  --primary-light: #8abdff;
+  --primary: #6d5dfc;
+  --primary-dark: #5b0eeb;
+  --white: #FFFFFF;
+  --greyLight-1: #E4EBF5;
+  --greyLight-2: #c8d0e7;
+  --greyLight-3: #bec8e4;
+  --greyDark: #9baacf;
+}
+.home .head-friend .head-search .head {
+  background-size: cover;
+  position: absolute;
+  width: 0.9rem;
+  height: 0.9rem;
+  z-index: 100;
+  top: 0.15rem;
+  border-radius: 0.267rem;
+  left: 0.533rem;
+  box-shadow: 0.133rem 0.133rem 0.133rem rgba(0, 0, 0, 0.1), -0.1rem -0.1rem 0.1rem #ffffff;
+  border: none;
+}
+.home .head-friend .head-search .search {
+  padding: 0.267rem;
+  top: 0.15rem;
+  left: 1.7rem;
+  position: absolute;
+  width: 6rem;
+  height: 0.9rem;
+  background: transparent;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition-duration: 0.5s;
+}
+.home .head-friend .head-search .search:focus {
+  box-shadow: inset 0.133rem 0.133rem 0.133rem rgba(0, 0, 0, 0.1), inset -0.133rem -0.133rem 0.133rem rgba(255, 255, 255);
+  font-size: 0.32rem;
+  border-radius: 0.533rem;
+  box-shadow: 0.133rem 0.133rem 0.133rem rgba(0, 0, 0, 0.1);
+  background: white;
+}
+.home .head-friend .head-search .scanning {
+  background-size: cover;
+  position: absolute;
+  width: 0.9rem;
+  height: 0.9rem;
+  z-index: 100;
+  top: 0.15rem;
+  border-radius: 0.267rem;
+  right: 1.2rem;
+  box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+  border: none;
+}
+.home .head-friend .head-search .mail {
+  background-size: cover;
+  position: absolute;
+  width: 0.9rem;
+  height: 0.9rem;
+  z-index: 100;
+  top: 0.15rem;
+  border-radius: 0.267rem;
+  right: 0.08rem;
+  box-shadow: 0.133rem 0.133rem 0.133rem rgba(0, 0, 0, 0.1), -0.1rem -0.1rem 0.1rem #ffffff;
+  border: none;
+}
+.home .head-friend .friend-list .swiper {
+  margin: 0 0.5rem;
+  padding: 0 5px;
+}
+.home .head-friend .friend-list .swiper .swiper-wrapper {
+  height: 1.9rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.home .head-friend .friend-list .swiper .swiper-wrapper .swiper-slide {
+  overflow: visible;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  box-shadow: 0.133rem 0.133rem 0.133rem rgba(0, 0, 0, 0.1), -0.1rem -0.1rem 0.1rem #ffffff;
+}
+.home .img-show {
+  overflow: hidden;
+  margin-top: 0.2rem;
+}
+.home .img-show .swiper {
+  display: flex;
+  align-items: center;
+  width: 10rem;
+  height: 6rem;
+  overflow: visible;
+}
+.home .img-show .swiper .swiper-slide {
+  top: 0.25rem;
+  width: 6rem;
+  height: 4rem;
+  background: #f0f2f5;
+  background-size: cover;
+  border: 0.01rem solid white;
+  box-shadow: 0.133rem 0.133rem 0.133rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  transition-duration: 0.25s;
+  overflow: hidden;
+}
+.home .img-show .swiper .swiper-slide .list {
+  font-size: 12px;
+  width: 6rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.home .img-show .swiper .swiper-slide .list .message {
+  border-radius: 15px;
+  position: relative;
+  width: 4rem;
+  height: 1rem;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0.133rem 0.133rem 0.133rem rgba(0, 0, 0, 0.1), -0.1rem -0.1rem 0.1rem #ffffff;
+}
+.home .img-show .swiper .swiper-slide .list .message:hover {
+  height: 4rem;
+  z-index: 100;
+}
+.home .img-show .swiper .swiper-slide .list .icon {
+  width: 1rem;
+  height: 1rem;
+  margin: 5px 2px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0.133rem 0.133rem 0.133rem rgba(0, 0, 0, 0.1), -0.1rem -0.1rem 0.1rem #ffffff;
+}
+.home .img-show .swiper .swiper-slide-active {
+  transform: scale(1.15, 1.15) translateY(20px);
+  z-index: 9000;
+}
+.home .todoList {
+  margin-top: -1.2rem;
+  margin-left: 0.25rem;
+  width: 9.5rem;
+  min-height: 9.5rem;
+  height: 2rem;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1), -5px -5px 5px #ffffff;
+}
+/*# sourceMappingURL=home.css.map */

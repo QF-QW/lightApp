@@ -1,0 +1,138 @@
+<script>
+
+    $.ajax({
+        url: "/lightapp/Login/GetUserJsonServlet.do",
+        dataType: "json",
+        success: function (result) {
+            window.user = result
+            course = window.user.course;
+
+        }
+    })
+
+    $(function (e) {
+        // window.user = JSON.parse('{"activeCount":0,"nickName":"嘻嘻哈哈","sex":0,"headUrl":"http://img02.fs.yiban.cn/46637422/avatar/user/200","speak_count":0,"realName":"嘻嘻哈哈","money":52,"createTime":"2022-03-04 01:35:23","schoolId":34173,"course":[{"courseName":"花卉栽培I","week":[[8,10]],"teacherName":"汤慧敏","dayTimeSimple":{"top":660,"height":155},"className":"温室","day":4,"dayTime":[[14,0],[15,20]]},{"courseName":"体育Ⅱ","week":[[2,10],[12,14]],"teacherName":"何家豪","dayTimeSimple":{"top":840,"height":155},"className":"未排教室","day":1,"dayTime":[[15,30],[16,50]]},{"courseName":"形势与政策Ⅱ","week":[[3,4]],"teacherName":"李小琼","dayTimeSimple":{"top":1200,"height":335},"className":"教B403","day":1,"dayTime":[[18,30],[21,20]]},{"courseName":"信息技术应用","week":[[2,15]],"teacherName":"李国文","dayTimeSimple":{"top":180,"height":155},"className":"教C204A","day":3,"dayTime":[[10,0],[11,20]]},{"courseName":"作物生产环境","week":[[2,12]],"teacherName":"王汭男","dayTimeSimple":{"top":0,"height":155},"className":"教C305","day":3,"dayTime":[[8,30],[9,50]]},{"courseName":"健康教育","week":[[2,9]],"teacherName":"邹洋慧","dayTimeSimple":{"top":660,"height":155},"className":"教B409","day":3,"dayTime":[[14,0],[15,20]]},{"courseName":"插花与压花艺术I","week":[[2,6],[8,13]],"teacherName":"岳海林","dayTimeSimple":{"top":660,"height":335},"className":"实B503","day":2,"dayTime":[[14,0],[16,50]]},{"courseName":"创新思维","week":[[2,9]],"teacherName":"叶子龙","dayTimeSimple":{"top":0,"height":155},"className":"教C506","day":1,"dayTime":[[8,30],[9,50]]},{"courseName":"花卉栽培I","week":[[4,6],[12,14]],"teacherName":"汤慧敏","dayTimeSimple":{"top":840,"height":155},"className":"温室","day":5,"dayTime":[[15,30],[16,50]]},{"courseName":"作物生产环境","week":[[13,17]],"teacherName":"王汭男","dayTimeSimple":{"top":0,"height":335},"className":"实B502","day":2,"dayTime":[[8,30],[11,20]]},{"courseName":"插花与压花艺术I","week":[[2,6],[8,11]],"teacherName":"陈礼芬","dayTimeSimple":{"top":0,"height":335},"className":"教C203","day":2,"dayTime":[[8,30],[11,20]]},{"courseName":"花卉栽培I","week":[[2,16]],"teacherName":"汤慧敏","dayTimeSimple":{"top":0,"height":155},"className":"教C402","day":4,"dayTime":[[8,30],[9,50]]},{"courseName":"信息技术应用","week":[[2,13]],"teacherName":"李国文","dayTimeSimple":{"top":1380,"height":155},"className":"教C204A","day":3,"dayTime":[[20,0],[21,20]]},{"courseName":"大学英语Ⅱ","week":[[2,14],[16,18]],"teacherName":"陈秀娟","dayTimeSimple":{"top":0,"height":155},"className":"教B210","day":5,"dayTime":[[8,30],[9,50]]},{"courseName":"作物生产环境","week":[[2,10],[12,13]],"teacherName":"王汭男","dayTimeSimple":{"top":660,"height":155},"className":"教C305","day":1,"dayTime":[[14,0],[15,20]]}],"id":46637422,"schoolName":"广东药科大学","yiBanRegtime":"2020-11-17 14:55:27"}')
+        window.friend = JSON.parse('[{"yb_usernick":"zhw","yb_userhead":"http://img02.fs.yiban.cn/40976219/avatar/user/200","yb_username":"zhw","yb_userid":"40976219","yb_sex":"M","yb_useractive":"一般"},{"yb_usernick":"易班1605322190","yb_userhead":"http://img02.fs.yiban.cn/46453182/avatar/user/200","yb_username":"易班1605322190","yb_userid":"46453182","yb_sex":"M","yb_useractive":"一般"}]')
+
+        $(".head-search .head").css("backgroundImage", "url(" + window.user.headUrl + ")")
+
+        for (i = 0; i < window.friend.length; i++) {
+            window.friendSwiper.appendSlide('<div class="swiper-slide" style="background: url(' + window.friend[i].yb_userhead + ');background-size: cover"></div>'); //加到Swiper的最后
+        }
+
+
+    })
+</script>
+
+<div class="home">
+    <div class="head-friend">
+        <form class="head-search">
+            <div class="head"></div>
+
+
+            <input type="text" class="search" placeholder="请输入你要查找的信息">
+            <div class="svg-background scanning">
+                <svg t="1646641750699" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                     xmlns="http://www.w3.org/2000/svg" p-id="6638" width="0.8rem" height="0.8rem">
+                    <path d="M573.400615 909.193846c-58.683077 41.984-67.268923 100.785231-67.347692 101.060923 0.354462 0.078769-7.876923-58.486154-66.323692-100.312615C268.406154 818.136615 39.384615 653.942154 39.384615 471.433846 39.384615 211.101538 248.32 0 506.092308 0 763.825231 0 972.8 211.062154 972.8 471.433846c0 182.390154-233.038769 376.123077-399.399385 437.76z"
+                          fill="#FFFFFF" fill-opacity=".5" p-id="6639"></path>
+                    <path d="M572.652308 158.759385c0-37.179077-29.932308-67.347692-66.678154-67.347693-36.864 0-66.678154 30.168615-66.678154 67.347693v336.738461c0 37.218462 29.814154 67.347692 66.678154 67.347692 36.785231 0 66.638769-30.129231 66.638769-67.347692v-336.738461zM505.974154 621.725538c-36.864 0-66.678154 30.129231-66.678154 67.347693 0 37.179077 29.814154 67.347692 66.678154 67.347692 36.785231 0 66.638769-30.168615 66.638769-67.347692 0-37.218462-29.853538-67.347692-66.638769-67.347693z"
+                          fill="#FFFFFF" p-id="6640"></path>
+                    <path d="M160.019692 200.743385v655.556923c0 1.378462 1.181538 2.520615 2.599385 2.520615h730.781538c1.417846 0 2.599385-1.142154 2.599385-2.520615V200.743385a2.599385 2.599385 0 0 0-2.599385-2.56H162.619077a2.599385 2.599385 0 0 0-2.599385 2.56z m208.029539 279.867077h319.881846c26.545231 0 48.128 21.188923 48.128 47.261538 0 26.072615-21.582769 47.261538-48.128 47.261538H368.049231a47.773538 47.773538 0 0 1-48.088616-47.261538c0-26.072615 21.582769-47.261538 48.088616-47.261538z"
+                          fill="#7FBCFF" p-id="6641"></path>
+                    <path d="M987.214769 652.327385a38.596923 38.596923 0 0 0-38.596923 38.439384v206.296616c0 26.899692-23.079385 50.018462-50.136615 50.018461h-207.556923a38.636308 38.636308 0 0 0-38.596923 38.478769c0 21.149538 17.408 38.439385 38.596923 38.439385h232.526769a99.485538 99.485538 0 0 0 100.430769-99.918769V690.806154c0-21.188923-15.478154-38.439385-36.627692-38.439385zM922.033231 0.118154h-231.266462a38.518154 38.518154 0 0 0-38.439384 38.478769c0 21.149538 17.250462 38.439385 38.439384 38.439385h206.296616c26.899692 0 50.018462 23.118769 50.018461 50.018461v206.296616c0 21.188923 17.289846 38.478769 38.478769 38.478769A38.518154 38.518154 0 0 0 1024 333.351385V100.036923C1021.912615 44.307692 977.762462 0.118154 921.993846 0.118154zM36.785231 371.672615c21.149538 0 38.596923-17.250462 38.596923-38.439384V126.936615c0-26.899692 23.079385-50.018462 50.136615-50.018461h207.438769a38.596923 38.596923 0 0 0 38.596924-38.478769 38.636308 38.636308 0 0 0-38.596924-38.439385H100.430769A99.485538 99.485538 0 0 0 0 99.918769v231.227077c0.118154-8.822154 15.596308 40.566154 36.785231 40.566154z m298.259692 576.827077H127.606154a51.042462 51.042462 0 0 1-50.136616-50.136615v-207.478154a38.675692 38.675692 0 0 0-38.596923-38.596923 38.675692 38.675692 0 0 0-38.596923 38.596923v232.566154a99.761231 99.761231 0 0 0 100.43077 100.430769h232.566153c21.188923 0 38.596923-17.408 38.596923-38.596923a36.903385 36.903385 0 0 0-36.78523-36.785231z"
+                          fill="#007AFF" p-id="6642"></path>
+                </svg>
+            </div>
+            <div class="svg-background mail">
+                <svg t="1646642215181" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                     xmlns="http://www.w3.org/2000/svg" p-id="11550" width="0.9rem" height="0.9rem">
+                    <path d="M466.08 62.56L63.52 344.64a79.776 79.776 0 0 0-34.08 65.44v406.08c0 88.32 71.68 159.84 160 159.84h645.28c88.32 0 160-71.52 160-159.84V410.08c0-26.08-12.64-50.4-34.08-65.44L557.92 62.56a79.872 79.872 0 0 0-91.84 0z"
+                          fill="#2166CC" p-id="11551"></path>
+                    <path d="M752 928H272c-52.96 0-96-43.04-96-96V416.64c0-52.96 43.04-96 96-96h480c52.96 0 96 43.04 96 96V832c0 53.12-43.04 96-96 96z"
+                          fill="#FFFFFF" p-id="11552"></path>
+                    <path d="M78.72 931.36A159.04 159.04 0 0 0 189.44 976h645.28c88.32 0 160-71.52 160-159.84V410.08c0-3.04-0.16-6.24-0.64-9.28L78.72 931.36z"
+                          fill="#4E8DF6" p-id="11553"></path>
+                    <path d="M30.08 400.8c-0.32 3.04-0.64 6.08-0.64 9.28v406.08c0 88.32 71.68 159.84 160 159.84h645.28a159.04 159.04 0 0 0 110.72-44.64L30.08 400.8z"
+                          fill="#629FF9" p-id="11554"></path>
+                    <path d="M366.72 496.48h-64c-8.8 0-16-7.2-16-16v-63.84c0-8.8 7.2-16 16-16h64c8.8 0 16 7.2 16 16v63.84c0 8.8-7.2 16-16 16z"
+                          fill="#4E8DF6" p-id="11555"></path>
+                    <path d="M606.72 432.48h-160c-8.8 0-16-7.2-16-16s7.2-16 16-16h160c8.8 0 16 7.2 16 16s-7.2 16-16 16zM702.72 496.48h-256c-8.8 0-16-7.2-16-16s7.2-16 16-16h256c8.8 0 16 7.2 16 16s-7.2 16-16 16z"
+                          fill="#E1E1DF" p-id="11556"></path>
+                </svg>
+            </div>
+        </form>
+        <div class="friend-list">
+            <div class="swiper mySwiper1">
+
+                <div class="swiper-wrapper">
+
+                </div>
+            </div>
+
+            <script>
+                window.friendSwiper = new Swiper(".mySwiper1", {
+                    slidesPerView: 5,
+                    spaceBetween: 10,
+                    slidesPerGroup: 5,
+                    loop: true,
+                    loopFillGroupWithBlank: true,
+                });
+
+            </script>
+        </div>
+    </div>
+
+    <div class="img-show">
+        <div class="swiper swiper-container">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+
+                </div>
+                <div class="swiper-slide">
+                </div>
+                <div class="swiper-slide"></div>
+            </div>
+        </div>
+
+
+        <script>
+
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 1.5,
+                spaceBetween: 30,
+                centeredSlides: true,
+                loop: true,
+            });
+
+
+        </script>
+    </div>
+
+    <div class="todoList" id="container">
+
+        <script>
+            $(function (){
+                var map = new AMap.Map('container', {
+                    zoom: 15,
+                    center: [113.400721, 23.054315]
+                })
+
+
+                var marker = new AMap.Marker({
+                    // position:new AMap.LngLat(113.400721,23.054315),
+                    position: [113.400721, 23.054315],
+                    title: "靓仔",
+                    // icon: user.headUrl,
+                    draggable: true,
+                    // offset:new AMap.Pixel(-13,-30)
+                })
+                map.add(marker)
+            })
+        </script>
+    </div>
+
+</div>
+
+<div class="blank" style="height: 1.5rem"></div>
